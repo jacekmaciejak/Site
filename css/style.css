@@ -1,0 +1,236 @@
+/* line 1, scss/main.scss */
+[class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+  transition: all .3s ease; }
+
+/* line 10, scss/main.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 18, scss/main.scss */
+.header {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray; }
+  /* line 26, scss/main.scss */
+  .header h1 {
+    text-align: center; }
+  /* line 30, scss/main.scss */
+  .header .clock {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 99999;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url("../img/clock.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: px solid #fff;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white; }
+    /* line 48, scss/main.scss */
+    .header .clock::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #848484;
+      border: 2px solid #fff;
+      z-index: 9999;
+      border-radius: 50%; }
+    /* line 59, scss/main.scss */
+    .header .clock .hour,
+    .header .clock .min,
+    .header .clock .sec {
+      position: absolute; }
+    /* line 65, scss/main.scss */
+    .header .clock .hour,
+    .header .clock .hr {
+      width: 110px;
+      height: 110px; }
+    /* line 71, scss/main.scss */
+    .header .clock .hr::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 50px;
+      background: #848484;
+      z-index: 10;
+      border-radius: 6px 6px 0 0; }
+    /* line 81, scss/main.scss */
+    .header .clock .min,
+    .header .clock .mn {
+      width: 110px;
+      height: 110px; }
+    /* line 87, scss/main.scss */
+    .header .clock .mn::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 50px;
+      background: #d6d6d6;
+      z-index: 11;
+      border-radius: 6px 6px 0 0; }
+    /* line 97, scss/main.scss */
+    .header .clock .sec,
+    .header .clock .sc {
+      width: 110px;
+      height: 110px; }
+    /* line 103, scss/main.scss */
+    .header .clock .sc::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 75px;
+      background: #ff6767;
+      z-index: 12;
+      border-radius: 6px 6px 0 0; }
+    /* line 113, scss/main.scss */
+    .header .clock #hr,
+    .header .clock #mn,
+    .header .clock #sc {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      border-radius: 50%; }
+
+/* line 129, scss/main.scss */
+.swiper-container {
+  height: 75vh;
+  transition: opacity .6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  /* line 136, scss/main.scss */
+  .swiper-container .swiper-wrapper {
+    width: 100%; }
+  /* line 140, scss/main.scss */
+  .swiper-container.swiper-container-coverflow {
+    padding-top: 2%; }
+  /* line 144, scss/main.scss */
+  .swiper-container.loading {
+    opacity: 0;
+    visibility: hidden; }
+  /* line 151, scss/main.scss */
+  .swiper-container:hover .swiper-button-prev,
+  .swiper-container:hover .swiper-button-next {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible; }
+
+/* line 160, scss/main.scss */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 50vh !important;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1); }
+  /* line 170, scss/main.scss */
+  .swiper-slide::after {
+    content: "";
+    background-image: inherit;
+    width: inherit;
+    height: 40%;
+    position: absolute;
+    bottom: -41%;
+    transform: scaleY(-1);
+    background-position: bottom;
+    background-size: cover;
+    opacity: .4; }
+  /* line 183, scss/main.scss */
+  .swiper-slide::before {
+    content: "";
+    width: inherit;
+    height: 42%;
+    position: absolute;
+    bottom: -42%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), white);
+    z-index: 1; }
+  /* line 193, scss/main.scss */
+  .swiper-slide .entity-img {
+    display: none; }
+  /* line 197, scss/main.scss */
+  .swiper-slide .content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 50%;
+    padding-left: 5%;
+    color: #fff; }
+    /* line 205, scss/main.scss */
+    .swiper-slide .content .title {
+      font-size: 2.6em;
+      font-weight: bold;
+      margin-bottom: 30px; }
+    /* line 211, scss/main.scss */
+    .swiper-slide .content .caption {
+      display: block;
+      font-size: 13px;
+      line-height: 1.4; }
+
+/* line 219, scss/main.scss */
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden; }
+
+/* line 226, scss/main.scss */
+.swiper-button-prev {
+  transform: translateX(50px); }
+
+/* line 230, scss/main.scss */
+.swiper-button-next {
+  transform: translateX(-50px); }
+
+/* line 236, scss/main.scss */
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: .4; }
+  /* line 245, scss/main.scss */
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    border: 0px solid #fff;
+    border-radius: 50%; }
+  /* line 258, scss/main.scss */
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1; }
+  /* line 264, scss/main.scss */
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    border-width: 1px; }
+
+@media (max-width: 1180px) {
+  /* line 276, scss/main.scss */
+  .swiper-slide .content .title {
+    font-size: 25px; }
+  /* line 280, scss/main.scss */
+  .swiper-slide .content .caption {
+    font-size: 12px; } }
+
+@media (max-width: 1023px) {
+  /* line 288, scss/main.scss */
+  .swiper-container {
+    height: 40vw; }
+    /* line 291, scss/main.scss */
+    .swiper-container.swiper-container-coverflow {
+      padding-top: 0; } }
