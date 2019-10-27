@@ -1,0 +1,4 @@
+Technology:
+sass
+Swiperjs - slider
+Javascript

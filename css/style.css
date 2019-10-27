@@ -56,14 +56,14 @@
     /* line 66, scss/main.scss */
     .header .clock .hour,
     .header .clock .hr {
-      width: 110px;
-      height: 110px; }
+      width: 90px;
+      height: 90px; }
     /* line 72, scss/main.scss */
     .header .clock .hr::before {
       content: '';
       position: absolute;
-      width: 8px;
-      height: 50px;
+      width: 6px;
+      height: 45px;
       background: #848484;
       z-index: 10;
       border-radius: 6px 6px 0 0; }
@@ -130,7 +130,7 @@
 
 /* line 161, scss/main.scss */
 .swiper-slide {
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   height: 50vh !important;
   width: inherit;
@@ -231,7 +231,4 @@
 @media (max-width: 1023px) {
   /* line 289, scss/main.scss */
   .swiper-container {
-    height: 40vw; }
-    /* line 292, scss/main.scss */
-    .swiper-container.swiper-container-coverflow {
-      padding-top: 0; } }
+    height: 75vh; } }

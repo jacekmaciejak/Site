@@ -5,7 +5,7 @@ var sliderSelector = ".swiper-container",
     loop: true,
     speed: 2000,
     slidesPerView: 2, // or 'auto'
-    // spaceBetween: 10,
+    spaceBetween: -20,
     centeredSlides: true,
     effect: "coverflow", // 'cube', 'fade', 'coverflow',
     coverflowEffect: {
@@ -26,7 +26,7 @@ var sliderSelector = ".swiper-container",
       prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-      1023: {
+      800: {
         slidesPerView: 2,
         spaceBetween: 0
       }
