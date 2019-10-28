@@ -831,7 +831,7 @@ $breakpoint argument choices:
         /* line 15, scss/components/_content.scss */
         .content-container .content-block {
           flex-direction: column;
-          height: 100vh; } }
+          height: 80vh; } }
       /* line 28, scss/components/_content.scss */
       .content-container .content-block__details {
         padding: 60px;
@@ -889,13 +889,17 @@ $breakpoint argument choices:
             .content-container .content-block__media img {
               max-height: 40vh;
               max-width: 100%; } }
-  /* line 98, scss/components/_content.scss */
+    @media (max-width: 56.25em) {
+      /* line 98, scss/components/_content.scss */
+      .content-container .contente-block__revers {
+        flex-direction: column-reverse; } }
+  /* line 106, scss/components/_content.scss */
   .content-container:nth-child(2) {
     padding: 0 60px; }
     @media (max-width: 56.25em) {
-      /* line 98, scss/components/_content.scss */
+      /* line 106, scss/components/_content.scss */
       .content-container:nth-child(2) {
-        flex-direction: column-reverse; } }
+        padding: 20px 20px; } }
 
 @keyframes moveInLeft {
   0% {

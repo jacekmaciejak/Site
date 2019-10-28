@@ -22,7 +22,7 @@
             @include respond(tab-port) {
                 //width < 900
                 flex-direction: column;
-                height: 100vh;
+                height: 80vh;
             }
 
             &__details {
@@ -85,12 +85,20 @@
                     align-items: center;
                     background-size: cover;
 
+
                     @include respond(tab-port) {
                         //width < 900
                         max-height: 40vh;
                         max-width: 100%;
                     }
                 }
+            }
+        }
+
+        .contente-block__revers {
+            @include respond(tab-port) {
+                //width < 900
+                flex-direction: column-reverse;
             }
         }
     }
@@ -100,7 +108,7 @@
 
         @include respond(tab-port) {
             //width < 900
-            flex-direction: column-reverse;
+            padding: 20px 20px;
         }
     }
 }
