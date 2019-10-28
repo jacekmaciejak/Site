@@ -198,7 +198,7 @@ $breakpoint argument choices:
   .swiper-slide .entity-img {
     display: none; }
   /* line 69, scss/components/_slider.scss */
-  .swiper-slide .content {
+  .swiper-slide .box {
     position: absolute;
     top: 40%;
     left: 0;
@@ -206,12 +206,12 @@ $breakpoint argument choices:
     padding-left: 5%;
     color: #fff; }
     /* line 77, scss/components/_slider.scss */
-    .swiper-slide .content .title {
+    .swiper-slide .box .title {
       font-size: 2.6em;
       font-weight: bold;
       margin-bottom: 30px; }
     /* line 83, scss/components/_slider.scss */
-    .swiper-slide .content .caption {
+    .swiper-slide .box .caption {
       display: block;
       font-size: 13px;
       line-height: 1.4; }
@@ -258,10 +258,10 @@ $breakpoint argument choices:
 
 @media (max-width: 1180px) {
   /* line 148, scss/components/_slider.scss */
-  .swiper-slide .content .title {
+  .swiper-slide .box .title {
     font-size: 25px; }
   /* line 152, scss/components/_slider.scss */
-  .swiper-slide .content .caption {
+  .swiper-slide .box .caption {
     font-size: 12px; } }
 
 @media (max-width: 1023px) {
@@ -812,17 +812,27 @@ $breakpoint argument choices:
 .content {
   background-color: #fafafa;
   width: 100%;
-  color: #000; }
-  /* line 6, scss/components/_content.scss */
+  color: #000;
+  display: block; }
+  /* line 7, scss/components/_content.scss */
   .content-container {
     padding: 70px 60px; }
-    /* line 9, scss/components/_content.scss */
+    @media (max-width: 56.25em) {
+      /* line 7, scss/components/_content.scss */
+      .content-container {
+        padding: 20px 20px; } }
+    /* line 15, scss/components/_content.scss */
     .content-container .content-block {
       display: flex;
       flex-direction: row-reverse;
       height: 50vh;
       align-items: center; }
-      /* line 16, scss/components/_content.scss */
+      @media (max-width: 56.25em) {
+        /* line 15, scss/components/_content.scss */
+        .content-container .content-block {
+          flex-direction: column;
+          height: 100vh; } }
+      /* line 28, scss/components/_content.scss */
       .content-container .content-block__details {
         padding: 60px;
         display: flex;
@@ -833,36 +843,59 @@ $breakpoint argument choices:
         height: 80%;
         position: relative;
         left: -50px; }
-        /* line 28, scss/components/_content.scss */
+        @media (max-width: 56.25em) {
+          /* line 28, scss/components/_content.scss */
+          .content-container .content-block__details {
+            left: 0;
+            height: 50vh;
+            padding: 20px; } }
+        /* line 46, scss/components/_content.scss */
         .content-container .content-block__details p {
           font-weight: 400;
           margin-bottom: 20px;
           font-size: 20px;
           line-height: 28px; }
-        /* line 35, scss/components/_content.scss */
+        /* line 53, scss/components/_content.scss */
         .content-container .content-block__details h2 {
           text-transform: capitalize;
           font-size: 40px;
           line-height: 76px; }
-        /* line 41, scss/components/_content.scss */
+        /* line 59, scss/components/_content.scss */
         .content-container .content-block__details__dek {
           margin-top: 75px; }
-          /* line 44, scss/components/_content.scss */
+          /* line 62, scss/components/_content.scss */
           .content-container .content-block__details__dek p {
             font-size: 20px;
             line-height: 28px; }
-      /* line 51, scss/components/_content.scss */
+      /* line 69, scss/components/_content.scss */
       .content-container .content-block .position {
         left: 50px; }
-      /* line 55, scss/components/_content.scss */
+        @media (max-width: 56.25em) {
+          /* line 69, scss/components/_content.scss */
+          .content-container .content-block .position {
+            left: 0px; } }
+      /* line 78, scss/components/_content.scss */
       .content-container .content-block__media {
         height: 100%; }
-        /* line 58, scss/components/_content.scss */
+        /* line 81, scss/components/_content.scss */
         .content-container .content-block__media img {
           height: 100%;
           display: flex;
           flex: 0 0 55%;
-          align-items: center; }
+          align-items: center;
+          background-size: cover; }
+          @media (max-width: 56.25em) {
+            /* line 81, scss/components/_content.scss */
+            .content-container .content-block__media img {
+              max-height: 40vh;
+              max-width: 100%; } }
+  /* line 98, scss/components/_content.scss */
+  .content-container:nth-child(2) {
+    padding: 0 60px; }
+    @media (max-width: 56.25em) {
+      /* line 98, scss/components/_content.scss */
+      .content-container:nth-child(2) {
+        flex-direction: column-reverse; } }
 
 @keyframes moveInLeft {
   0% {
@@ -1109,7 +1142,11 @@ body {
     border: 2px solid #fff;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white;
     cursor: pointer; }
-    /* line 68, scss/main.scss */
+    @media (max-width: 56.25em) {
+      /* line 49, scss/main.scss */
+      .header .clock {
+        display: none; } }
+    /* line 72, scss/main.scss */
     .header .clock::before {
       content: '';
       position: absolute;
@@ -1119,17 +1156,17 @@ body {
       border: 2px solid #fff;
       z-index: 9999;
       border-radius: 50%; }
-    /* line 79, scss/main.scss */
+    /* line 83, scss/main.scss */
     .header .clock .hour,
     .header .clock .min,
     .header .clock .sec {
       position: absolute; }
-    /* line 85, scss/main.scss */
+    /* line 89, scss/main.scss */
     .header .clock .hour,
     .header .clock .hr {
       width: 90px;
       height: 90px; }
-    /* line 91, scss/main.scss */
+    /* line 95, scss/main.scss */
     .header .clock .hr::before {
       content: '';
       position: absolute;
@@ -1138,12 +1175,12 @@ body {
       background: #848484;
       z-index: 10;
       border-radius: 6px 6px 0 0; }
-    /* line 101, scss/main.scss */
+    /* line 105, scss/main.scss */
     .header .clock .min,
     .header .clock .mn {
       width: 110px;
       height: 110px; }
-    /* line 107, scss/main.scss */
+    /* line 111, scss/main.scss */
     .header .clock .mn::before {
       content: '';
       position: absolute;
@@ -1152,12 +1189,12 @@ body {
       background: #d6d6d6;
       z-index: 11;
       border-radius: 6px 6px 0 0; }
-    /* line 117, scss/main.scss */
+    /* line 121, scss/main.scss */
     .header .clock .sec,
     .header .clock .sc {
       width: 110px;
       height: 110px; }
-    /* line 123, scss/main.scss */
+    /* line 127, scss/main.scss */
     .header .clock .sc::before {
       content: '';
       position: absolute;
@@ -1166,7 +1203,7 @@ body {
       background: #ff6767;
       z-index: 12;
       border-radius: 6px 6px 0 0; }
-    /* line 133, scss/main.scss */
+    /* line 137, scss/main.scss */
     .header .clock #hr,
     .header .clock #mn,
     .header .clock #sc {

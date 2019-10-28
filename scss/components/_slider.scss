@@ -66,7 +66,7 @@
         display: none;
     }
 
-    .content {
+    .box {
         position: absolute;
         top: 40%;
         left: 0;
@@ -144,7 +144,7 @@
 // Mediaqueries
 @media(max-width:1180px) {
     .swiper-slide {
-        .content {
+        .box {
             .title {
                 font-size: 25px;
             }

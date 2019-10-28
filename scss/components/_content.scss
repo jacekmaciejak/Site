@@ -2,9 +2,15 @@
     background-color: #fafafa;
     width: 100%;
     color: #000;
+    display: block;
 
     &-container {
         padding: 70px 60px;
+
+        @include respond(tab-port) {
+            //width < 900
+            padding: 20px 20px;
+        }
 
         .content-block {
             display: flex;
@@ -12,6 +18,12 @@
             height: 50vh;
             align-items: center;
 
+
+            @include respond(tab-port) {
+                //width < 900
+                flex-direction: column;
+                height: 100vh;
+            }
 
             &__details {
                 padding: 60px;
@@ -24,6 +36,12 @@
                 position: relative;
                 left: -50px;
 
+                @include respond(tab-port) {
+                    //width < 900
+                    left: 0;
+                    height: 50vh;
+                    padding: 20px;
+                }
 
                 p {
                     font-weight: 400;
@@ -50,6 +68,11 @@
 
             .position {
                 left: 50px;
+
+                @include respond(tab-port) {
+                    //width < 900
+                    left: 0px;
+                }
             }
 
             &__media {
@@ -60,8 +83,24 @@
                     display: flex;
                     flex: 0 0 55%;
                     align-items: center;
+                    background-size: cover;
+
+                    @include respond(tab-port) {
+                        //width < 900
+                        max-height: 40vh;
+                        max-width: 100%;
+                    }
                 }
             }
+        }
+    }
+
+    &-container:nth-child(2) {
+        padding: 0 60px;
+
+        @include respond(tab-port) {
+            //width < 900
+            flex-direction: column-reverse;
         }
     }
 }

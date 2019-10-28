@@ -65,6 +65,10 @@
             0 0 0 4px rgba(255, 255, 255, 1);
         cursor: pointer;
 
+        @include respond(tab-port) {
+            display: none;
+        }
+
         &::before {
             content: '';
             position: absolute;
