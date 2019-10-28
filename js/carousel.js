@@ -3,11 +3,8 @@ $(function() {
 
   showcase.Cloud9Carousel({
     yPos: 42,
-    yRadius: 48,
-    mirrorOptions: {
-      gap: 12,
-      height: 0.2
-    },
+    yRadius: 50,
+    farScale: 0.5,
     buttonLeft: $(".nav > .left"),
     buttonRight: $(".nav > .right"),
     autoPlay: true,
