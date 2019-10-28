@@ -766,55 +766,47 @@ $breakpoint argument choices:
 
 /* line 1, scss/components/_carousel.scss */
 #wrap {
-  width: 980px;
-  left: -490px;
-  top: 6%;
-  margin-top: 52px;
-  margin-left: 50%;
-  position: relative; }
-  /* line 9, scss/components/_carousel.scss */
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-items: center; }
+  /* line 13, scss/components/_carousel.scss */
   #wrap h1 {
     text-align: center;
     font-size: 30px;
-    margin-bottom: 100px; }
-
-/* line 16, scss/components/_carousel.scss */
-#showcase {
-  width: 100%;
-  height: 460px; }
-
-/* line 21, scss/components/_carousel.scss */
-#showcase img {
-  cursor: pointer;
-  width: 200px;
-  height: 200px; }
-
-/* line 27, scss/components/_carousel.scss */
-#item-title {
-  color: #000;
-  font-size: 30px;
-  text-align: center;
-  margin-top: -20px;
-  margin-bottom: 32px; }
-
-/* line 35, scss/components/_carousel.scss */
-.nav {
-  text-align: center; }
-
-/* line 39, scss/components/_carousel.scss */
-.nav > button {
-  width: 60px;
-  height: 60px;
-  color: #fff;
-  text-align: center;
-  background: #000;
-  border: none;
-  cursor: pointer; }
-
-/* line 49, scss/components/_carousel.scss */
-.nav > button:focus {
-  border: none;
-  outline: none; }
+    color: #000;
+    margin-top: 50px; }
+  /* line 20, scss/components/_carousel.scss */
+  #wrap #showcase {
+    width: 70%;
+    height: 460px; }
+    /* line 24, scss/components/_carousel.scss */
+    #wrap #showcase img {
+      cursor: pointer;
+      opacity: .8; }
+  /* line 30, scss/components/_carousel.scss */
+  #wrap #item-title {
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px; }
+  /* line 37, scss/components/_carousel.scss */
+  #wrap .nav {
+    text-align: center; }
+    /* line 40, scss/components/_carousel.scss */
+    #wrap .nav button {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      text-align: center;
+      background: #000;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%; }
+      /* line 50, scss/components/_carousel.scss */
+      #wrap .nav button:focus {
+        border: none;
+        outline: none; }
 
 @keyframes moveInLeft {
   0% {

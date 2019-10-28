@@ -1,16 +1,15 @@
 /*!
-	reflection.js for jQuery v1.11
+	reflection.js for jQuery v1.12
 	(c) 2006-2013 Christophe Beyls <http://www.digitalia.be>
 	MIT-style license.
 */
 
-(function($) {
+;(function($) {
 
-$.fn.extend({
-	reflect: function(options) {
+	$.fn.reflect = function(options) {
 		options = $.extend({
 			height: 1/3,
-			opacity: 0.5
+			opacity: 0.0
 		}, options);
 
 		return this.unreflect().each(function() {
@@ -54,7 +53,7 @@ $.fn.extend({
 
 					wrapper = $(/^a$/i.test(img.parentNode.tagName) ? "<span />" : "<div />").insertAfter(img).append([img, reflection])[0];
 					wrapper.className = img.className;
-					$.data(img, "reflected", wrapper.style.cssText = img.style.cssText);
+					$(img).data("reflected", wrapper.style.cssText = img.style.cssText);
 					$(wrapper).css({width: imageWidth, height: imageHeight + reflectionHeight, overflow: "hidden"});
 					img.style.cssText = "display: block; border: 0px";
 					img.className = "reflected";
@@ -64,21 +63,20 @@ $.fn.extend({
 				else $(img).load(doReflect);
 			}
 		});
-	},
+	}
 
-	unreflect: function() {
+	$.fn.unreflect = function() {
 		return this.unbind("load").each(function() {
-			var img = this, reflected = $.data(this, "reflected"), wrapper;
+			var img = this, reflected = $(this).data("reflected"), wrapper;
 
 			if (reflected !== undefined) {
 				wrapper = img.parentNode;
 				img.className = wrapper.className;
 				img.style.cssText = reflected;
-				$.removeData(img, "reflected");
+				$(img).data("reflected", null);
 				wrapper.parentNode.replaceChild(img, wrapper);
 			}
 		});
 	}
-});
 
-})(jQuery);
+})(window.jQuery || window.Zepto);
