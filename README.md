@@ -1,4 +1,4 @@
 # Site
 new site - project
 
-https://jacekmaciejak.github.io/Site/. 
+https://jacekmaciejak.github.io/Site/
