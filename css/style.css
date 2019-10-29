@@ -140,12 +140,13 @@ $breakpoint argument choices:
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-/* line 1, scss/layout/header.scss */
+/* line 1, scss/layout/_header.scss */
 .header {
   color: #000;
   min-height: 100vh;
   position: relative;
   object-fit: cover;
+  object-position: center;
   background: url("../../img/img5.jpg");
   z-index: 999;
   display: grid;
@@ -156,14 +157,14 @@ $breakpoint argument choices:
   background-attachment: fixed;
   background-size: cover; }
   @media only screen and (max-width: 900px) {
-    /* line 21, scss/layout/header.scss */
+    /* line 22, scss/layout/_header.scss */
     .header .defaultHero {
       background-position: calc(100% + 200px); } }
-  /* line 26, scss/layout/header.scss */
+  /* line 27, scss/layout/_header.scss */
   .header_title {
     margin-left: 200px;
     font-size: 20px; }
-    /* line 30, scss/layout/header.scss */
+    /* line 31, scss/layout/_header.scss */
     .header_title h5 {
       text-align: end; }
 
