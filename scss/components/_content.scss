@@ -4,6 +4,7 @@
     color: #000;
     display: block;
 
+
     &-container {
         padding: 70px 60px;
 
@@ -17,6 +18,7 @@
             flex-direction: row-reverse;
             height: 50vh;
             align-items: center;
+            justify-content: center;
 
 
             @include respond(tab-port) {
@@ -35,6 +37,8 @@
                 height: 80%;
                 position: relative;
                 left: -50px;
+                box-shadow: 0 20px 40px -10px #818181;
+
 
                 @include respond(tab-port) {
                     //width < 900
@@ -84,6 +88,8 @@
                     flex: 0 0 55%;
                     align-items: center;
                     background-size: cover;
+                    box-shadow: 0 20px 40px -10px #818181;
+
 
 
                     @include respond(tab-port) {

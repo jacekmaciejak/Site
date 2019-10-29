@@ -34,6 +34,11 @@
     padding: 0;
 }
 
+body {
+
+    font-family: 'PT Sans', sans-serif;
+}
+
 .header {
     width: 100%;
     height: 100vh;
@@ -64,6 +69,7 @@
             0 20px 20px rgba(0, 0, 0, .2),
             0 0 0 4px rgba(255, 255, 255, 1);
         cursor: pointer;
+
 
         @include respond(tab-port) {
             display: none;
