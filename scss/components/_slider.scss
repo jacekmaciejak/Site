@@ -6,13 +6,12 @@
     justify-content: center;
     box-shadow: 0 20px 40px -10px #818181;
 
-
     .swiper-wrapper {
         width: 100%;
     }
 
     &.swiper-container-coverflow {
-        padding-top: 2%;
+        padding-top: 3%;
     }
 
     &.loading {

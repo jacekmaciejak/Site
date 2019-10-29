@@ -140,6 +140,33 @@ $breakpoint argument choices:
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+/* line 1, scss/layout/header.scss */
+.header {
+  color: #000;
+  min-height: 100vh;
+  position: relative;
+  object-fit: cover;
+  background: url("../../img/img5.jpg");
+  z-index: 999;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media only screen and (max-width: 900px) {
+    /* line 21, scss/layout/header.scss */
+    .header .defaultHero {
+      background-position: calc(100% + 200px); } }
+  /* line 26, scss/layout/header.scss */
+  .header_title {
+    margin-left: 200px;
+    font-size: 20px; }
+    /* line 30, scss/layout/header.scss */
+    .header_title h5 {
+      text-align: end; }
+
 /* line 1, scss/components/_slider.scss */
 .swiper-container {
   height: 75vh;
@@ -148,24 +175,24 @@ $breakpoint argument choices:
   align-items: center;
   justify-content: center;
   box-shadow: 0 20px 40px -10px #818181; }
-  /* line 10, scss/components/_slider.scss */
+  /* line 9, scss/components/_slider.scss */
   .swiper-container .swiper-wrapper {
     width: 100%; }
-  /* line 14, scss/components/_slider.scss */
+  /* line 13, scss/components/_slider.scss */
   .swiper-container.swiper-container-coverflow {
-    padding-top: 2%; }
-  /* line 18, scss/components/_slider.scss */
+    padding-top: 3%; }
+  /* line 17, scss/components/_slider.scss */
   .swiper-container.loading {
     opacity: 0;
     visibility: hidden; }
-  /* line 25, scss/components/_slider.scss */
+  /* line 24, scss/components/_slider.scss */
   .swiper-container:hover .swiper-button-prev,
   .swiper-container:hover .swiper-button-next {
     transform: translateX(0);
     opacity: 1;
     visibility: visible; }
 
-/* line 34, scss/components/_slider.scss */
+/* line 33, scss/components/_slider.scss */
 .swiper-slide {
   background-position: bottom;
   background-size: cover;
@@ -174,7 +201,7 @@ $breakpoint argument choices:
   height: inherit;
   position: relative;
   box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1); }
-  /* line 44, scss/components/_slider.scss */
+  /* line 43, scss/components/_slider.scss */
   .swiper-slide::after {
     content: "";
     background-image: inherit;
@@ -186,7 +213,7 @@ $breakpoint argument choices:
     background-position: bottom;
     background-size: cover;
     opacity: .4; }
-  /* line 57, scss/components/_slider.scss */
+  /* line 56, scss/components/_slider.scss */
   .swiper-slide::before {
     content: "";
     width: inherit;
@@ -195,10 +222,10 @@ $breakpoint argument choices:
     bottom: -42%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), white);
     z-index: 1; }
-  /* line 67, scss/components/_slider.scss */
+  /* line 66, scss/components/_slider.scss */
   .swiper-slide .entity-img {
     display: none; }
-  /* line 71, scss/components/_slider.scss */
+  /* line 70, scss/components/_slider.scss */
   .swiper-slide .box {
     position: absolute;
     top: 40%;
@@ -206,32 +233,32 @@ $breakpoint argument choices:
     width: 50%;
     padding-left: 5%;
     color: #fff; }
-    /* line 79, scss/components/_slider.scss */
+    /* line 78, scss/components/_slider.scss */
     .swiper-slide .box .title {
       font-size: 2.6em;
       font-weight: bold;
       margin-bottom: 30px; }
-    /* line 85, scss/components/_slider.scss */
+    /* line 84, scss/components/_slider.scss */
     .swiper-slide .box .caption {
       display: block;
       font-size: 13px;
       line-height: 1.4; }
 
-/* line 93, scss/components/_slider.scss */
+/* line 92, scss/components/_slider.scss */
 [class^="swiper-button-"] {
   width: 44px;
   opacity: 0;
   visibility: hidden; }
 
-/* line 100, scss/components/_slider.scss */
+/* line 99, scss/components/_slider.scss */
 .swiper-button-prev {
   transform: translateX(50px); }
 
-/* line 104, scss/components/_slider.scss */
+/* line 103, scss/components/_slider.scss */
 .swiper-button-next {
   transform: translateX(-50px); }
 
-/* line 110, scss/components/_slider.scss */
+/* line 109, scss/components/_slider.scss */
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 9px;
   position: relative;
@@ -239,7 +266,7 @@ $breakpoint argument choices:
   height: 12px;
   background-color: #fff;
   opacity: .4; }
-  /* line 119, scss/components/_slider.scss */
+  /* line 118, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
     content: '';
     position: absolute;
@@ -250,23 +277,23 @@ $breakpoint argument choices:
     transform: translate(-50%, -50%);
     border: 0px solid #fff;
     border-radius: 50%; }
-  /* line 132, scss/components/_slider.scss */
+  /* line 131, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     opacity: 1; }
-  /* line 138, scss/components/_slider.scss */
+  /* line 137, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     border-width: 1px; }
 
 @media (max-width: 1180px) {
-  /* line 150, scss/components/_slider.scss */
+  /* line 149, scss/components/_slider.scss */
   .swiper-slide .box .title {
     font-size: 25px; }
-  /* line 154, scss/components/_slider.scss */
+  /* line 153, scss/components/_slider.scss */
   .swiper-slide .box .caption {
     font-size: 12px; } }
 
 @media (max-width: 1023px) {
-  /* line 162, scss/components/_slider.scss */
+  /* line 161, scss/components/_slider.scss */
   .swiper-container {
     height: 75vh; } }
 
@@ -905,6 +932,93 @@ $breakpoint argument choices:
       .content-container:nth-child(2) {
         padding: 20px 20px; } }
 
+/* line 1, scss/components/_clock.scss */
+.clock {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  z-index: 99999;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff url("../img/clock.png");
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white;
+  cursor: pointer; }
+  @media (max-width: 56.25em) {
+    /* line 1, scss/components/_clock.scss */
+    .clock {
+      display: none; } }
+  /* line 25, scss/components/_clock.scss */
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #848484;
+    border: 2px solid #fff;
+    z-index: 9999;
+    border-radius: 50%; }
+  /* line 36, scss/components/_clock.scss */
+  .clock .hour,
+  .clock .min,
+  .clock .sec {
+    position: absolute; }
+  /* line 42, scss/components/_clock.scss */
+  .clock .hour,
+  .clock .hr {
+    width: 90px;
+    height: 90px; }
+  /* line 48, scss/components/_clock.scss */
+  .clock .hr::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 45px;
+    background: #848484;
+    z-index: 10;
+    border-radius: 6px 6px 0 0; }
+  /* line 58, scss/components/_clock.scss */
+  .clock .min,
+  .clock .mn {
+    width: 110px;
+    height: 110px; }
+  /* line 64, scss/components/_clock.scss */
+  .clock .mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    background: #d6d6d6;
+    z-index: 11;
+    border-radius: 6px 6px 0 0; }
+  /* line 74, scss/components/_clock.scss */
+  .clock .sec,
+  .clock .sc {
+    width: 110px;
+    height: 110px; }
+  /* line 80, scss/components/_clock.scss */
+  .clock .sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 75px;
+    background: #ff6767;
+    z-index: 12;
+    border-radius: 6px 6px 0 0; }
+  /* line 90, scss/components/_clock.scss */
+  .clock #hr,
+  .clock #mn,
+  .clock #sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -1110,11 +1224,11 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-/* line 20, scss/main.scss */
+/* line 22, scss/main.scss */
 [class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
   transition: all .3s ease; }
 
-/* line 29, scss/main.scss */
+/* line 31, scss/main.scss */
 *,
 *:before,
 *:after {
@@ -1122,104 +1236,6 @@ body {
   margin: 0;
   padding: 0; }
 
-/* line 37, scss/main.scss */
+/* line 39, scss/main.scss */
 body {
   font-family: 'PT Sans', sans-serif; }
-
-/* line 44, scss/main.scss */
-.header {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray; }
-  /* line 52, scss/main.scss */
-  .header h1 {
-    text-align: center; }
-  /* line 56, scss/main.scss */
-  .header .clock {
-    position: fixed;
-    left: 30px;
-    top: 30px;
-    z-index: 99999;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff url("../img/clock.png");
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white;
-    cursor: pointer; }
-    @media (max-width: 56.25em) {
-      /* line 56, scss/main.scss */
-      .header .clock {
-        display: none; } }
-    /* line 80, scss/main.scss */
-    .header .clock::before {
-      content: '';
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background: #848484;
-      border: 2px solid #fff;
-      z-index: 9999;
-      border-radius: 50%; }
-    /* line 91, scss/main.scss */
-    .header .clock .hour,
-    .header .clock .min,
-    .header .clock .sec {
-      position: absolute; }
-    /* line 97, scss/main.scss */
-    .header .clock .hour,
-    .header .clock .hr {
-      width: 90px;
-      height: 90px; }
-    /* line 103, scss/main.scss */
-    .header .clock .hr::before {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 45px;
-      background: #848484;
-      z-index: 10;
-      border-radius: 6px 6px 0 0; }
-    /* line 113, scss/main.scss */
-    .header .clock .min,
-    .header .clock .mn {
-      width: 110px;
-      height: 110px; }
-    /* line 119, scss/main.scss */
-    .header .clock .mn::before {
-      content: '';
-      position: absolute;
-      width: 4px;
-      height: 50px;
-      background: #d6d6d6;
-      z-index: 11;
-      border-radius: 6px 6px 0 0; }
-    /* line 129, scss/main.scss */
-    .header .clock .sec,
-    .header .clock .sc {
-      width: 110px;
-      height: 110px; }
-    /* line 135, scss/main.scss */
-    .header .clock .sc::before {
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 75px;
-      background: #ff6767;
-      z-index: 12;
-      border-radius: 6px 6px 0 0; }
-    /* line 145, scss/main.scss */
-    .header .clock #hr,
-    .header .clock #mn,
-    .header .clock #sc {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      border-radius: 50%; }

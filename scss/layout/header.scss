@@ -1,0 +1,34 @@
+.header {
+    color: #000;
+    min-height: 100vh;
+    position: relative;
+    object-fit: cover;
+    background: url("../../img/img5.jpg");
+    z-index: 999;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+
+    background: {
+        position: bottom;
+        repeat: no-repeat;
+        attachment: fixed;
+        size: cover;
+    }
+
+
+    @media only screen and (max-width: 900px) {
+        .defaultHero {
+            background-position: calc(100% + 200px);
+        }
+    }
+
+    &_title {
+        margin-left: 200px;
+        font-size: 20px;
+
+        h5 {
+            text-align: end;
+        }
+    }
+}
