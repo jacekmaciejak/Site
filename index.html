@@ -14,15 +14,22 @@
     <!-- Plugins -->
     <script src="jquery.reflection.js"></script>
     <script src="jquery.cloud9carousel.js"></script>
-    <title>Document</title>
+    <script src="https://use.fontawesome.com/d5956b1f98.js"></script>
+
+    <title>Strona</title>
 </head>
 
 <body>
+
+    <button id="scrollToTopButton" onclick="scrollToTop(200,3)">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
     <nav class="navbar">
         <ul>
-            <li><a href="#">AAAA</a></li>
-            <li><a href="#">BBBB</a></li>
-            <li><a href="#">Nasz Zespół</a></li>
+            <li><a href="#swiper">Projekty</a></li>
+            <li><a href="#about">Us?ugi</a></li>
+            <li><a href="#wrap">Nasz Zespół</a></li>
             <li><a href="#">DDDD</a></li>
         </ul>
         <button class="navbar_toggler">
@@ -48,7 +55,7 @@
         </div>
     </section>
 
-    <section class="swiper-container loading">
+    <section class="swiper-container loading" id="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide "
                 style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
@@ -127,7 +134,7 @@
         <div class="swiper-button-next swiper-button-white"></div>
     </section>
 
-    <section class="content">
+    <section class="content" id="about">
         <div class="content-container">
             <div class="content-block">
                 <div class="content-block__details">
@@ -173,9 +180,6 @@
         </div>
     </section>
 
-
-
-
     <section id="wrap">
         <h1>Nasz zespol</h1>
         <div id="showcase">
@@ -192,8 +196,6 @@
             <button class="right"><i class="fa fa-arrow-right"></i></button>
         </div>
     </section>
-
-
 
     <footer class="footer">
         <div class="footer__logo-box ">
@@ -252,14 +254,11 @@
             </div>
         </div>
     </div>
-
-
-
-
     <script src="js/clock.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/topButton.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -11,6 +11,7 @@
 @import"components/content";
 @import"components/clock";
 @import"components/navbar";
+@import"components/scrollTopButton";
 
 @import"base/animations";
 @import"base/base";
@@ -39,4 +40,5 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    height: 100%;
 }
