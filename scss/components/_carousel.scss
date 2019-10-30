@@ -36,7 +36,7 @@
             height: 60px;
             color: #fff;
             text-align: center;
-            background: #000;
+            background: #c2682f;
             border: none;
             cursor: pointer;
             border-radius: 50%;
@@ -44,6 +44,11 @@
             &:focus {
                 border: none;
                 outline: none;
+            }
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+
             }
         }
     }

@@ -42,7 +42,7 @@ $breakpoint argument choices:
     height: auto; }
   /* line 25, scss/layout/_footer.scss */
   .footer__navigation {
-    border-top: 1px solid #777;
+    border-top: 1px solid #c2682f;
     padding-top: 2rem;
     display: inline-block; }
     @media (max-width: 56.25em) {
@@ -50,16 +50,16 @@ $breakpoint argument choices:
       .footer__navigation {
         width: 100%;
         text-align: center; } }
-  /* line 37, scss/layout/_footer.scss */
+  /* line 36, scss/layout/_footer.scss */
   .footer__list {
     list-style: none; }
-  /* line 41, scss/layout/_footer.scss */
+  /* line 40, scss/layout/_footer.scss */
   .footer__item {
     display: inline-block; }
-    /* line 45, scss/layout/_footer.scss */
+    /* line 43, scss/layout/_footer.scss */
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
-  /* line 52, scss/layout/_footer.scss */
+  /* line 50, scss/layout/_footer.scss */
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -67,20 +67,19 @@ $breakpoint argument choices:
     text-transform: uppercase;
     display: inline-block;
     transition: all .2s; }
-  /* line 62, scss/layout/_footer.scss */
+  /* line 60, scss/layout/_footer.scss */
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
-  /* line 70, scss/layout/_footer.scss */
+  /* line 68, scss/layout/_footer.scss */
   .footer__copyright {
-    border-top: 1px solid #777;
+    border-top: 1px solid #c2682f;
     padding-top: 2rem;
-    width: 85%;
     float: right;
     text-align: center; }
     @media (max-width: 56.25em) {
-      /* line 70, scss/layout/_footer.scss */
+      /* line 68, scss/layout/_footer.scss */
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -828,7 +827,7 @@ $breakpoint argument choices:
       height: 60px;
       color: #fff;
       text-align: center;
-      background: #000;
+      background: #c2682f;
       border: none;
       cursor: pointer;
       border-radius: 50%; }
@@ -836,6 +835,9 @@ $breakpoint argument choices:
       #wrap .nav button:focus {
         border: none;
         outline: none; }
+      /* line 49, scss/components/_carousel.scss */
+      #wrap .nav button:hover {
+        transform: scale(1.1, 1.1); }
 
 /* line 1, scss/components/_content.scss */
 .content {
@@ -843,14 +845,14 @@ $breakpoint argument choices:
   width: 100%;
   color: #000;
   display: block; }
-  /* line 8, scss/components/_content.scss */
+  /* line 7, scss/components/_content.scss */
   .content-container {
     padding: 70px 60px; }
     @media (max-width: 56.25em) {
-      /* line 8, scss/components/_content.scss */
+      /* line 7, scss/components/_content.scss */
       .content-container {
         padding: 20px 20px; } }
-    /* line 16, scss/components/_content.scss */
+    /* line 15, scss/components/_content.scss */
     .content-container .content-block {
       display: flex;
       flex-direction: row-reverse;
@@ -858,11 +860,11 @@ $breakpoint argument choices:
       align-items: center;
       justify-content: center; }
       @media (max-width: 56.25em) {
-        /* line 16, scss/components/_content.scss */
+        /* line 15, scss/components/_content.scss */
         .content-container .content-block {
           flex-direction: column;
           height: 80vh; } }
-      /* line 30, scss/components/_content.scss */
+      /* line 28, scss/components/_content.scss */
       .content-container .content-block__details {
         padding: 60px;
         display: flex;
@@ -873,42 +875,44 @@ $breakpoint argument choices:
         height: 80%;
         position: relative;
         left: -50px;
-        box-shadow: 0 20px 40px -10px #818181; }
+        box-shadow: 0 20px 40px -10px #818181;
+        border-right: 3px solid #c2682f;
+        border-left: 3px solid #c2682f; }
         @media (max-width: 56.25em) {
-          /* line 30, scss/components/_content.scss */
+          /* line 28, scss/components/_content.scss */
           .content-container .content-block__details {
             left: 0;
             height: 50vh;
             padding: 20px; } }
-        /* line 50, scss/components/_content.scss */
+        /* line 49, scss/components/_content.scss */
         .content-container .content-block__details p {
           font-weight: 400;
           margin-bottom: 20px;
           font-size: 20px;
           line-height: 28px; }
-        /* line 57, scss/components/_content.scss */
+        /* line 56, scss/components/_content.scss */
         .content-container .content-block__details h2 {
           text-transform: capitalize;
           font-size: 40px;
           line-height: 76px; }
-        /* line 63, scss/components/_content.scss */
+        /* line 62, scss/components/_content.scss */
         .content-container .content-block__details__dek {
           margin-top: 75px; }
-          /* line 66, scss/components/_content.scss */
+          /* line 65, scss/components/_content.scss */
           .content-container .content-block__details__dek p {
             font-size: 20px;
             line-height: 28px; }
-      /* line 73, scss/components/_content.scss */
+      /* line 72, scss/components/_content.scss */
       .content-container .content-block .position {
         left: 50px; }
         @media (max-width: 56.25em) {
-          /* line 73, scss/components/_content.scss */
+          /* line 72, scss/components/_content.scss */
           .content-container .content-block .position {
             left: 0px; } }
-      /* line 82, scss/components/_content.scss */
+      /* line 81, scss/components/_content.scss */
       .content-container .content-block__media {
         height: 100%; }
-        /* line 85, scss/components/_content.scss */
+        /* line 84, scss/components/_content.scss */
         .content-container .content-block__media img {
           height: 100%;
           display: flex;
@@ -917,19 +921,19 @@ $breakpoint argument choices:
           background-size: cover;
           box-shadow: 0 20px 40px -10px #818181; }
           @media (max-width: 56.25em) {
-            /* line 85, scss/components/_content.scss */
+            /* line 84, scss/components/_content.scss */
             .content-container .content-block__media img {
               max-height: 40vh;
               max-width: 100%; } }
     @media (max-width: 56.25em) {
-      /* line 104, scss/components/_content.scss */
+      /* line 101, scss/components/_content.scss */
       .content-container .contente-block__revers {
         flex-direction: column-reverse; } }
-  /* line 112, scss/components/_content.scss */
+  /* line 109, scss/components/_content.scss */
   .content-container:nth-child(2) {
     padding: 0 60px; }
     @media (max-width: 56.25em) {
-      /* line 112, scss/components/_content.scss */
+      /* line 109, scss/components/_content.scss */
       .content-container:nth-child(2) {
         padding: 20px 20px; } }
 
@@ -1008,7 +1012,7 @@ $breakpoint argument choices:
     position: absolute;
     width: 2px;
     height: 75px;
-    background: #ff6767;
+    background: #c2682f;
     z-index: 12;
     border-radius: 6px 6px 0 0; }
   /* line 90, scss/components/_clock.scss */
@@ -1023,33 +1027,23 @@ $breakpoint argument choices:
 /* line 1, scss/components/_navbar.scss */
 .navbar {
   width: 100%;
-  height: 100px;
   line-height: 80px;
   font-size: 30px;
-  padding: 0 30px;
+  padding: 20px 20px;
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0; }
+  display: flex;
+  justify-content: end; }
   @media (max-width: 50em) {
     /* line 1, scss/components/_navbar.scss */
     .navbar {
       padding: 0; } }
-  /* line 16, scss/components/_navbar.scss */
-  .navbar_brand {
-    text-decoration: none;
-    float: left;
-    line-height: inherit;
-    padding: 0 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #000; }
-  /* line 29, scss/components/_navbar.scss */
+  /* line 15, scss/components/_navbar.scss */
   .navbar ul {
-    float: right;
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     @media (max-width: 50em) {
-      /* line 29, scss/components/_navbar.scss */
+      /* line 15, scss/components/_navbar.scss */
       .navbar ul {
         width: 100%;
         padding: 0;
@@ -1059,48 +1053,45 @@ $breakpoint argument choices:
         overflow: hidden;
         transition: all ease-in-out .3s; } }
     @media (max-width: 56.25em) {
-      /* line 29, scss/components/_navbar.scss */
+      /* line 15, scss/components/_navbar.scss */
       .navbar ul {
         padding: 0 10px; } }
     @media (max-width: 50em) {
-      /* line 48, scss/components/_navbar.scss */
+      /* line 33, scss/components/_navbar.scss */
       .navbar ul .open {
         max-height: 100vh; } }
-    /* line 54, scss/components/_navbar.scss */
+    /* line 39, scss/components/_navbar.scss */
     .navbar ul li {
       display: inline-block; }
       @media (max-width: 50em) {
-        /* line 54, scss/components/_navbar.scss */
+        /* line 39, scss/components/_navbar.scss */
         .navbar ul li {
           width: 100%;
           border-bottom: 1px solid #fff; } }
-      /* line 63, scss/components/_navbar.scss */
+      /* line 47, scss/components/_navbar.scss */
       .navbar ul li a {
         text-decoration: none;
-        display: block;
         text-align: center;
-        padding: 0 30px;
-        min-width: 120px;
-        color: #000; }
+        padding: 5px 10px;
+        color: #c2682f; }
         @media (max-width: 50em) {
-          /* line 63, scss/components/_navbar.scss */
+          /* line 47, scss/components/_navbar.scss */
           .navbar ul li a {
             padding: 0;
             color: #fff; } }
         @media (max-width: 56.25em) {
-          /* line 63, scss/components/_navbar.scss */
+          /* line 47, scss/components/_navbar.scss */
           .navbar ul li a {
             min-width: 100px;
             padding: 0 20px; } }
-        /* line 82, scss/components/_navbar.scss */
+        /* line 64, scss/components/_navbar.scss */
         .navbar ul li a:hover {
-          background-color: #000;
-          color: #fff; }
-  /* line 91, scss/components/_navbar.scss */
+          border-bottom: 2px solid #ed6510; }
+  /* line 72, scss/components/_navbar.scss */
   .navbar_toggler {
     display: none; }
     @media (max-width: 50em) {
-      /* line 91, scss/components/_navbar.scss */
+      /* line 72, scss/components/_navbar.scss */
       .navbar_toggler {
         display: block;
         position: absolute;
@@ -1113,11 +1104,11 @@ $breakpoint argument choices:
         outline: none;
         padding: 0 5px;
         cursor: pointer; } }
-    /* line 108, scss/components/_navbar.scss */
+    /* line 89, scss/components/_navbar.scss */
     .navbar_toggler span {
       font-size: 30px;
       font-weight: 700; }
-    /* line 114, scss/components/_navbar.scss */
+    /* line 95, scss/components/_navbar.scss */
     .navbar_toggler span,
     .navbar_toggler span::before,
     .navbar_toggler span::after {
@@ -1128,10 +1119,10 @@ $breakpoint argument choices:
       width: 28px;
       border-radius: 4px;
       transition: all ease-in-out 0.3s; }
-    /* line 126, scss/components/_navbar.scss */
+    /* line 107, scss/components/_navbar.scss */
     .navbar_toggler span::before {
       transform: translateY(-8px); }
-    /* line 130, scss/components/_navbar.scss */
+    /* line 111, scss/components/_navbar.scss */
     .navbar_toggler span::after {
       transform: translateY(5px); }
 

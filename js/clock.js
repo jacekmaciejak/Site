@@ -27,7 +27,7 @@ let insertDivX;
 let insertDivY;
 
 div.addEventListener("mousedown", e => {
-  div.style.backgroundColor = "pink";
+  div.style.backgroundColor = "#c2682f";
   drawActive = true;
   insertDivX = e.offsetX;
   insertDivY = e.offsetY;
