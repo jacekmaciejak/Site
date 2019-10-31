@@ -36,10 +36,13 @@
             height: 60px;
             color: #fff;
             text-align: center;
-            background: #c2682f;
+            background: $color-decoration;
             border: none;
             cursor: pointer;
             border-radius: 50%;
+            transition: .2s;
+            font-size: xx-large;
+
 
             &:focus {
                 border: none;
