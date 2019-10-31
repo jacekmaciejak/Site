@@ -17,7 +17,7 @@ setInterval(() => {
 //Clock move after clicked
 const div = document.querySelector(".clock");
 let divX = 30;
-let divY = 30;
+let divY = 100;
 div.style.left = `${divX}px`;
 div.style.top = `${divY}px`;
 

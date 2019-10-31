@@ -9,6 +9,7 @@
     display: grid;
     align-items: center;
     justify-content: start;
+    width: 100%;
 
     background: {
         position: bottom;
@@ -28,6 +29,13 @@
 
         h5 {
             text-align: end;
+        }
+
+        @include respond(tab-port) {
+            //width < 900
+            display: block;
+            margin: 0 auto;
+            text-align: center;
         }
     }
 }
