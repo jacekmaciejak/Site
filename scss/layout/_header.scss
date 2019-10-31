@@ -17,17 +17,14 @@
         size: cover;
     }
 
-
-    @media only screen and (max-width: 900px) {
-        .defaultHero {
-            background-position: calc(100% + 200px);
-        }
+    @include respond(tab-port) {
+        //width < 900
+        background-position: calc(100% + 200px);
     }
 
     &_title {
         margin-left: 200px;
         font-size: 20px;
-
 
         h5 {
             text-align: end;
