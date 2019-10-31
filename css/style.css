@@ -38,28 +38,37 @@ $breakpoint argument choices:
         margin-bottom: 6rem; } }
   /* line 20, scss/layout/_footer.scss */
   .footer__logo {
-    width: 15rem;
-    height: auto; }
-  /* line 25, scss/layout/_footer.scss */
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #c2682f;
+    list-style: none; }
+    /* line 29, scss/layout/_footer.scss */
+    .footer__logo span {
+      font-size: 28px;
+      font-weight: 700; }
+  /* line 35, scss/layout/_footer.scss */
   .footer__navigation {
     border-top: 1px solid #c2682f;
     padding-top: 2rem;
     display: inline-block; }
     @media (max-width: 56.25em) {
-      /* line 25, scss/layout/_footer.scss */
+      /* line 35, scss/layout/_footer.scss */
       .footer__navigation {
         width: 100%;
         text-align: center; } }
-  /* line 36, scss/layout/_footer.scss */
+  /* line 46, scss/layout/_footer.scss */
   .footer__list {
     list-style: none; }
-  /* line 40, scss/layout/_footer.scss */
+  /* line 50, scss/layout/_footer.scss */
   .footer__item {
     display: inline-block; }
-    /* line 43, scss/layout/_footer.scss */
+    /* line 53, scss/layout/_footer.scss */
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
-  /* line 50, scss/layout/_footer.scss */
+  /* line 60, scss/layout/_footer.scss */
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -67,19 +76,19 @@ $breakpoint argument choices:
     text-transform: uppercase;
     display: inline-block;
     transition: all .2s; }
-  /* line 60, scss/layout/_footer.scss */
+  /* line 70, scss/layout/_footer.scss */
   .footer__link:hover, .footer__link:active {
-    color: #55c57a;
+    color: #c2682f;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
-  /* line 68, scss/layout/_footer.scss */
+  /* line 78, scss/layout/_footer.scss */
   .footer__copyright {
     border-top: 1px solid #c2682f;
     padding-top: 2rem;
     float: right;
     text-align: center; }
     @media (max-width: 56.25em) {
-      /* line 68, scss/layout/_footer.scss */
+      /* line 78, scss/layout/_footer.scss */
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -802,7 +811,7 @@ $breakpoint argument choices:
   #wrap h1 {
     text-align: center;
     font-size: 30px;
-    color: #000;
+    color: #c2682f;
     margin-top: 50px; }
   /* line 14, scss/components/_carousel.scss */
   #wrap #showcase {
@@ -1028,8 +1037,7 @@ $breakpoint argument choices:
 
 /* line 1, scss/components/_navbar.scss */
 .navbar {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
   height: 80px;
@@ -1040,130 +1048,128 @@ $breakpoint argument choices:
   top: 0;
   left: 0;
   z-index: 9999; }
-
-/* line 16, scss/components/_navbar.scss */
-.navbar a {
-  text-decoration: none;
-  color: #fff; }
-
-/* line 21, scss/components/_navbar.scss */
-.navbar a.navbar-brand {
-  float: left;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 30px;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 2px; }
-
-/* line 32, scss/components/_navbar.scss */
-.navbar a.navbar-brand span {
-  font-size: 28px;
-  font-weight: 700; }
-
-/* line 37, scss/components/_navbar.scss */
-.navbar ul {
-  float: right;
-  list-style: none;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 50px; }
-
-/* line 45, scss/components/_navbar.scss */
-.navbar ul li {
-  display: inline-block; }
-
-/* line 49, scss/components/_navbar.scss */
-.navbar ul li a {
-  display: block;
-  text-align: center;
-  min-width: 120px;
-  padding: 0 30px; }
-
-/* line 56, scss/components/_navbar.scss */
-.navbar ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.15); }
-
-/* line 60, scss/components/_navbar.scss */
-.navbar .navbar-toggler {
-  display: none; }
-
-@media (max-width: 991px) {
-  /* line 65, scss/components/_navbar.scss */
+  @media (max-width: 50em) {
+    /* line 1, scss/components/_navbar.scss */
+    .navbar {
+      padding: 0; } }
+  /* line 19, scss/components/_navbar.scss */
+  .navbar a {
+    text-decoration: none;
+    color: #c2682f; }
+    /* line 23, scss/components/_navbar.scss */
+    .navbar a.navbar_brand {
+      float: left;
+      height: inherit;
+      line-height: inherit;
+      padding: 0 30px;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2px; }
+      /* line 33, scss/components/_navbar.scss */
+      .navbar a.navbar_brand span {
+        font-size: 28px;
+        font-weight: 700; }
+  /* line 40, scss/components/_navbar.scss */
   .navbar ul {
-    padding: 0 10px; }
-  /* line 69, scss/components/_navbar.scss */
-  .navbar ul li a {
-    min-width: 100px;
-    padding: 0 20px; } }
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px; }
+    @media (max-width: 56.25em) {
+      /* line 40, scss/components/_navbar.scss */
+      .navbar ul {
+        padding: 0 10px; } }
+    @media (max-width: 50em) {
+      /* line 40, scss/components/_navbar.scss */
+      .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        position: relative;
+        z-index: 99999999; } }
+    /* line 67, scss/components/_navbar.scss */
+    .navbar ul li {
+      display: inline-block; }
+      @media (max-width: 50em) {
+        /* line 67, scss/components/_navbar.scss */
+        .navbar ul li {
+          width: 100%; } }
+      /* line 75, scss/components/_navbar.scss */
+      .navbar ul li a {
+        display: block;
+        text-align: center;
+        min-width: 120px;
+        padding: 0 30px; }
+        /* line 81, scss/components/_navbar.scss */
+        .navbar ul li a:hover {
+          border-bottom: #e27916; }
+        @media (max-width: 56.25em) {
+          /* line 75, scss/components/_navbar.scss */
+          .navbar ul li a {
+            min-width: 100px;
+            padding: 0 20px; } }
+        @media (max-width: 50em) {
+          /* line 75, scss/components/_navbar.scss */
+          .navbar ul li a {
+            padding: 10px 0;
+            font-size: 30px; } }
+  /* line 101, scss/components/_navbar.scss */
+  .navbar .open {
+    max-height: 100vh;
+    padding-top: 100px; }
+  /* line 106, scss/components/_navbar.scss */
+  .navbar-toggler {
+    display: none; }
+    @media (max-width: 50em) {
+      /* line 106, scss/components/_navbar.scss */
+      .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #c2682f;
+        border: 3px solid #c2682f;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer; } }
+    /* line 125, scss/components/_navbar.scss */
+    .navbar-toggler span,
+    .navbar-toggler span::before,
+    .navbar-toggler span::after {
+      display: block;
+      content: '';
+      background-color: #c2682f;
+      height: 3px;
+      width: 28px;
+      border-radius: 4px;
+      transition: all ease-in-out 0.3s; }
+    /* line 138, scss/components/_navbar.scss */
+    .navbar-toggler span::before {
+      transform: translateY(-8px); }
+    /* line 142, scss/components/_navbar.scss */
+    .navbar-toggler span::after {
+      transform: translateY(5px); }
 
-@media (max-width: 767px) {
-  /* line 76, scss/components/_navbar.scss */
-  .navbar {
-    padding: 0; }
-  /* line 80, scss/components/_navbar.scss */
-  .navbar ul {
-    width: 100%;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* height: auto; */
-    height: 100vh;
-    max-height: 0;
-    overflow: hidden;
-    transition: all ease-in-out 0.3s; }
-  /* line 91, scss/components/_navbar.scss */
-  .navbar ul.open {
-    max-height: 100vh; }
-  /* line 95, scss/components/_navbar.scss */
-  .navbar ul li {
-    width: 100%;
-    /* border-bottom: 1px solid rgba(255,255,255,0.3); */ }
-  /* line 100, scss/components/_navbar.scss */
-  .navbar ul li a {
-    padding: 0; }
-  /* line 104, scss/components/_navbar.scss */
-  .navbar .navbar-toggler {
-    display: block;
-    position: absolute;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    color: #fff;
-    border: 3px solid #fff;
-    /* border: none; */
-    /* border-radius: 4px; */
-    outline: none;
-    padding: 0 5px;
-    cursor: pointer; }
-  /* line 120, scss/components/_navbar.scss */
-  .navbar .navbar-toggler span,
-  .navbar .navbar-toggler span::before,
-  .navbar .navbar-toggler span::after {
-    display: block;
-    content: '';
-    background-color: #fff;
-    height: 3px;
-    width: 28px;
-    border-radius: 4px;
-    transition: all ease-in-out 0.3s; }
-  /* line 132, scss/components/_navbar.scss */
-  .navbar .navbar-toggler span::before {
-    transform: translateY(-8px); }
-  /* line 136, scss/components/_navbar.scss */
-  .navbar .navbar-toggler span::after {
-    transform: translateY(5px); }
-  /* line 140, scss/components/_navbar.scss */
+@media (max-width: 800px) {
+  /* line 156, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span {
     /* transform: rotate(90deg); */
     background-color: transparent;
     /* transform: scale(0.85) rotate(270deg); */ }
-  /* line 146, scss/components/_navbar.scss */
+  /* line 162, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span::before {
     transform: translateY(0px) rotate(45deg);
     /* transform: translateY(0px) scale(0.75) rotate(45deg); */ }
-  /* line 151, scss/components/_navbar.scss */
+  /* line 167, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span::after {
     transform: translateY(-3px) rotate(-45deg);
     /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */ } }
