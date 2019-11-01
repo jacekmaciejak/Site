@@ -1,44 +1,46 @@
 .navbar {
     background-color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
     width: 100%;
-    height: 80px;
-    line-height: 80px;
-    font-size: 18px;
     padding: 0 30px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    height: 80px;
+    // border-bottom: 1px solid rgba(255, 255, 255, 1);
+    line-height: 80px;
+
 
     @include respond(phone-large) {
         //width < 800
         padding: 0;
     }
 
-    a {
+    &_brand {
         text-decoration: none;
         color: $color-decoration;
         font-weight: bold;
         font-size: $main-font-size;
+        float: left;
+        height: inherit;
+        line-height: inherit;
+        padding: 0 30px;
+        font-size: $main-font-size;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 2px;
 
 
-        &.navbar_brand {
-            float: left;
-            height: inherit;
-            line-height: inherit;
-            padding: 0 30px;
-            font-size: $main-font-size;
-            text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 2px;
+        &:hover {
+            border: #e27916;
+        }
 
-            span {
-                font-size: 28px;
-                font-weight: 700;
-            }
+        span {
+            font-size: 28px;
+            font-weight: 700;
         }
     }
+
 
     ul {
         float: right;
@@ -46,8 +48,6 @@
         height: inherit;
         line-height: inherit;
         padding: 0 50px;
-
-
 
         @include respond(tab-port) {
             //width < 900
@@ -76,13 +76,18 @@
             }
 
             a {
+                text-decoration: none;
+                color: $color-decoration;
+                font-weight: bold;
+                font-size: $main-font-size;
                 display: block;
                 text-align: center;
                 min-width: 120px;
                 padding: 0 30px;
 
                 &:hover {
-                    border-bottom: #e27916;
+                    border: #e27916;
+
                 }
 
                 @include respond(tab-port) {
