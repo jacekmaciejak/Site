@@ -24,8 +24,9 @@
     }
 
     &_title {
-        margin-left: 200px;
-        font-size: 20px;
+        margin-left: 20%;
+        font-size: $main-font-size;
+        width: 100%;
 
         h5 {
             text-align: end;

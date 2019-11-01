@@ -1,6 +1,6 @@
 .navbar {
     background-color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
     width: 100%;
     height: 80px;
     line-height: 80px;
@@ -20,7 +20,7 @@
         text-decoration: none;
         color: $color-decoration;
         font-weight: bold;
-        font-size: 22px;
+        font-size: $main-font-size;
 
 
         &.navbar_brand {
@@ -28,7 +28,7 @@
             height: inherit;
             line-height: inherit;
             padding: 0 30px;
-            font-size: 22px;
+            font-size: $main-font-size;
             text-transform: uppercase;
             font-weight: 400;
             letter-spacing: 2px;
