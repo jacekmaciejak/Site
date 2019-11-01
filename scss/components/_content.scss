@@ -38,6 +38,8 @@
                 box-shadow: 0 20px 40px -10px #818181;
                 border-right: 3px solid $color-decoration;
                 border-left: 3px solid $color-decoration;
+                position: relative;
+                z-index: 9999999;
 
                 @include respond(tab-land) {
                     //width < 1200
@@ -139,7 +141,8 @@
 
     &-container:nth-child(2) {
 
-        // padding: 0 60px;
+        padding: 0 60px;
+
         @include respond(tab-land) {
             //width < 1200
             padding: 0;

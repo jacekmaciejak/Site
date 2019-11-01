@@ -247,7 +247,7 @@ $breakpoint argument choices:
     position: absolute;
     top: 40%;
     left: 0;
-    width: 60%;
+    width: 70%;
     padding-left: 5%;
     color: #fff; }
     /* line 78, scss/components/_slider.scss */
@@ -896,7 +896,9 @@ $breakpoint argument choices:
         left: -50px;
         box-shadow: 0 20px 40px -10px #818181;
         border-right: 3px solid #c2682f;
-        border-left: 3px solid #c2682f; }
+        border-left: 3px solid #c2682f;
+        position: relative;
+        z-index: 9999999; }
         @media (max-width: 75em) {
           /* line 28, scss/components/_content.scss */
           .content-container .content-block__details {
@@ -908,44 +910,44 @@ $breakpoint argument choices:
             left: 0;
             height: 50vh;
             padding: 20px; } }
-        /* line 55, scss/components/_content.scss */
+        /* line 57, scss/components/_content.scss */
         .content-container .content-block__details p {
           font-weight: 400;
           margin-bottom: 20px;
           font-size: calc(10px + 1vw);
           line-height: 28px; }
-        /* line 62, scss/components/_content.scss */
+        /* line 64, scss/components/_content.scss */
         .content-container .content-block__details h2 {
           text-transform: capitalize;
           font-size: calc(13px + 1.3vw);
           line-height: 76px; }
-        /* line 68, scss/components/_content.scss */
+        /* line 70, scss/components/_content.scss */
         .content-container .content-block__details__dek {
           margin-top: 75px; }
-          /* line 71, scss/components/_content.scss */
+          /* line 73, scss/components/_content.scss */
           .content-container .content-block__details__dek p {
             font-size: 20px;
             line-height: 28px; }
-      /* line 78, scss/components/_content.scss */
+      /* line 80, scss/components/_content.scss */
       .content-container .content-block .position {
         left: 50px; }
         @media (max-width: 56.25em) {
-          /* line 78, scss/components/_content.scss */
+          /* line 80, scss/components/_content.scss */
           .content-container .content-block .position {
             left: 0px; } }
-      /* line 87, scss/components/_content.scss */
+      /* line 89, scss/components/_content.scss */
       .content-container .content-block__media {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center; }
         @media (max-width: 56.25em) {
-          /* line 87, scss/components/_content.scss */
+          /* line 89, scss/components/_content.scss */
           .content-container .content-block__media {
             margin-top: -120px;
             position: relative;
             z-index: 99999; } }
-        /* line 100, scss/components/_content.scss */
+        /* line 102, scss/components/_content.scss */
         .content-container .content-block__media img {
           height: 100%;
           width: 100%;
@@ -958,26 +960,29 @@ $breakpoint argument choices:
           background-attachment: fixed;
           background-size: cover; }
           @media (max-width: 75em) {
-            /* line 100, scss/components/_content.scss */
+            /* line 102, scss/components/_content.scss */
             .content-container .content-block__media img {
               height: 80%; } }
           @media (max-width: 56.25em) {
-            /* line 100, scss/components/_content.scss */
+            /* line 102, scss/components/_content.scss */
             .content-container .content-block__media img {
               max-height: 40vh;
               max-width: 100%; } }
     @media (max-width: 56.25em) {
-      /* line 132, scss/components/_content.scss */
+      /* line 134, scss/components/_content.scss */
       .content-container .contente-block__revers {
         flex-direction: column-reverse; } }
-  @media (max-width: 75em) {
-    /* line 140, scss/components/_content.scss */
-    .content-container:nth-child(2) {
-      padding: 0; } }
-  @media (max-width: 56.25em) {
-    /* line 140, scss/components/_content.scss */
-    .content-container:nth-child(2) {
-      padding: 20px 20px; } }
+  /* line 142, scss/components/_content.scss */
+  .content-container:nth-child(2) {
+    padding: 0 60px; }
+    @media (max-width: 75em) {
+      /* line 142, scss/components/_content.scss */
+      .content-container:nth-child(2) {
+        padding: 0; } }
+    @media (max-width: 56.25em) {
+      /* line 142, scss/components/_content.scss */
+      .content-container:nth-child(2) {
+        padding: 20px 20px; } }
 
 /* line 1, scss/components/_clock.scss */
 .clock {
