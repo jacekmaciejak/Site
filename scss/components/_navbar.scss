@@ -7,8 +7,8 @@
     left: 0;
     z-index: 9999;
     height: 80px;
-    // border-bottom: 1px solid rgba(255, 255, 255, 1);
-    line-height: 80px;
+    line-height: 60px;
+    letter-spacing: 2px;
 
 
     @include respond(phone-large) {
@@ -28,11 +28,22 @@
         font-size: $main-font-size;
         text-transform: uppercase;
         font-weight: 400;
-        letter-spacing: 2px;
+        position: relative;
 
+        &:after {
+            position: absolute;
+            left: 50%;
+            content: '';
+            height: 3px;
+            background: #f25715;
+            transition: all .5s linear;
+            width: 0;
+            bottom: -3px;
+        }
 
-        &:hover {
-            border: #e27916;
+        &:hover:after {
+            width: 100%;
+            left: 0px;
         }
 
         span {
@@ -40,7 +51,6 @@
             font-weight: 700;
         }
     }
-
 
     ul {
         float: right;
@@ -84,11 +94,24 @@
                 text-align: center;
                 min-width: 120px;
                 padding: 0 30px;
+                position: relative;
 
-                &:hover {
-                    border: #e27916;
-
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                    content: '';
+                    height: 3px;
+                    background: #f25715;
+                    transition: all .5s linear;
+                    width: 0;
+                    bottom: -3px;
                 }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0px;
+                }
+
 
                 @include respond(tab-port) {
                     //width < 900
