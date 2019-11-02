@@ -31,7 +31,7 @@ $breakpoint argument choices:
   /* line 11, scss/layout/_footer.scss */
   .footer__logo-box {
     text-align: center;
-    margin-bottom: -2rem; }
+    margin-bottom: -3rem; }
     @media (max-width: 56.25em) {
       /* line 11, scss/layout/_footer.scss */
       .footer__logo-box {
@@ -45,30 +45,30 @@ $breakpoint argument choices:
     text-decoration: none;
     color: #c2682f;
     list-style: none; }
-    /* line 29, scss/layout/_footer.scss */
+    /* line 30, scss/layout/_footer.scss */
     .footer__logo span {
-      font-size: 28px;
+      font-size: calc(13px + 1.3vw);
       font-weight: 700; }
-  /* line 35, scss/layout/_footer.scss */
+  /* line 36, scss/layout/_footer.scss */
   .footer__navigation {
     border-top: 1px solid #c2682f;
     padding-top: 2rem;
     display: inline-block; }
     @media (max-width: 56.25em) {
-      /* line 35, scss/layout/_footer.scss */
+      /* line 36, scss/layout/_footer.scss */
       .footer__navigation {
         width: 100%;
         text-align: center; } }
-  /* line 46, scss/layout/_footer.scss */
+  /* line 47, scss/layout/_footer.scss */
   .footer__list {
     list-style: none; }
-  /* line 50, scss/layout/_footer.scss */
+  /* line 51, scss/layout/_footer.scss */
   .footer__item {
     display: inline-block; }
-    /* line 53, scss/layout/_footer.scss */
+    /* line 54, scss/layout/_footer.scss */
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
-  /* line 60, scss/layout/_footer.scss */
+  /* line 61, scss/layout/_footer.scss */
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -76,19 +76,19 @@ $breakpoint argument choices:
     text-transform: uppercase;
     display: inline-block;
     transition: all .2s; }
-  /* line 70, scss/layout/_footer.scss */
+  /* line 71, scss/layout/_footer.scss */
   .footer__link:hover, .footer__link:active {
     color: #c2682f;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
-  /* line 78, scss/layout/_footer.scss */
+  /* line 79, scss/layout/_footer.scss */
   .footer__copyright {
     border-top: 1px solid #c2682f;
     padding-top: 2rem;
     float: right;
     text-align: center; }
     @media (max-width: 56.25em) {
-      /* line 78, scss/layout/_footer.scss */
+      /* line 79, scss/layout/_footer.scss */
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -898,7 +898,7 @@ $breakpoint argument choices:
         border-right: 3px solid #c2682f;
         border-left: 3px solid #c2682f;
         position: relative;
-        z-index: 9999999; }
+        z-index: 999; }
         @media (max-width: 75em) {
           /* line 28, scss/components/_content.scss */
           .content-container .content-block__details {
@@ -1087,19 +1087,20 @@ $breakpoint argument choices:
       padding: 0; } }
   /* line 19, scss/components/_navbar.scss */
   .navbar_brand {
+    display: inline-block;
     text-decoration: none;
     color: #c2682f;
-    font-weight: bold;
     font-size: calc(13px + 1vw);
     float: left;
     height: inherit;
-    line-height: inherit;
     padding: 0 30px;
     font-size: calc(13px + 1vw);
     text-transform: uppercase;
     font-weight: 400;
-    position: relative; }
-    /* line 33, scss/components/_navbar.scss */
+    position: relative;
+    display: flex;
+    align-items: center; }
+    /* line 34, scss/components/_navbar.scss */
     .navbar_brand:after {
       position: absolute;
       left: 50%;
@@ -1108,29 +1109,31 @@ $breakpoint argument choices:
       background: #f25715;
       transition: all .5s linear;
       width: 0;
-      bottom: -3px; }
-    /* line 44, scss/components/_navbar.scss */
+      bottom: 12px; }
+    /* line 45, scss/components/_navbar.scss */
     .navbar_brand:hover:after {
       width: 100%;
       left: 0px; }
-    /* line 49, scss/components/_navbar.scss */
+    /* line 50, scss/components/_navbar.scss */
     .navbar_brand span {
-      font-size: 28px;
+      font-size: calc(13px + 1.3vw);
       font-weight: 700; }
-  /* line 55, scss/components/_navbar.scss */
+  /* line 56, scss/components/_navbar.scss */
   .navbar ul {
     float: right;
     list-style: none;
     height: inherit;
-    line-height: inherit;
-    padding: 0 50px; }
+    padding: 0 50px;
+    display: flex;
+    align-items: center; }
     @media (max-width: 56.25em) {
-      /* line 55, scss/components/_navbar.scss */
+      /* line 56, scss/components/_navbar.scss */
       .navbar ul {
         padding: 0 10px; } }
     @media (max-width: 50em) {
-      /* line 55, scss/components/_navbar.scss */
+      /* line 56, scss/components/_navbar.scss */
       .navbar ul {
+        display: block;
         width: 100%;
         padding: 0;
         background-color: rgba(0, 0, 0, 0.9);
@@ -1140,14 +1143,14 @@ $breakpoint argument choices:
         transition: all ease-in-out 0.3s;
         position: relative;
         z-index: 99999999; } }
-    /* line 80, scss/components/_navbar.scss */
+    /* line 83, scss/components/_navbar.scss */
     .navbar ul li {
       display: inline-block; }
       @media (max-width: 50em) {
-        /* line 80, scss/components/_navbar.scss */
+        /* line 83, scss/components/_navbar.scss */
         .navbar ul li {
           width: 100%; } }
-      /* line 88, scss/components/_navbar.scss */
+      /* line 91, scss/components/_navbar.scss */
       .navbar ul li a {
         text-decoration: none;
         color: #c2682f;
@@ -1158,7 +1161,7 @@ $breakpoint argument choices:
         min-width: 120px;
         padding: 0 30px;
         position: relative; }
-        /* line 99, scss/components/_navbar.scss */
+        /* line 102, scss/components/_navbar.scss */
         .navbar ul li a:after {
           position: absolute;
           left: 50%;
@@ -1167,30 +1170,35 @@ $breakpoint argument choices:
           background: #f25715;
           transition: all .5s linear;
           width: 0;
-          bottom: -3px; }
-        /* line 110, scss/components/_navbar.scss */
+          bottom: 3px; }
+        /* line 113, scss/components/_navbar.scss */
         .navbar ul li a:hover:after {
           width: 100%;
           left: 0px; }
+          @media (max-width: 50em) {
+            /* line 113, scss/components/_navbar.scss */
+            .navbar ul li a:hover:after {
+              width: 50%;
+              left: 25%; } }
         @media (max-width: 56.25em) {
-          /* line 88, scss/components/_navbar.scss */
+          /* line 91, scss/components/_navbar.scss */
           .navbar ul li a {
             min-width: 100px;
             padding: 0 20px; } }
         @media (max-width: 50em) {
-          /* line 88, scss/components/_navbar.scss */
+          /* line 91, scss/components/_navbar.scss */
           .navbar ul li a {
             padding: 10px 0;
             font-size: 30px; } }
-  /* line 132, scss/components/_navbar.scss */
+  /* line 141, scss/components/_navbar.scss */
   .navbar .open {
     max-height: 100vh;
     padding-top: 100px; }
-  /* line 137, scss/components/_navbar.scss */
+  /* line 146, scss/components/_navbar.scss */
   .navbar-toggler {
     display: none; }
     @media (max-width: 50em) {
-      /* line 137, scss/components/_navbar.scss */
+      /* line 146, scss/components/_navbar.scss */
       .navbar-toggler {
         display: block;
         position: absolute;
@@ -1204,7 +1212,7 @@ $breakpoint argument choices:
         outline: none;
         padding: 0 5px;
         cursor: pointer; } }
-    /* line 156, scss/components/_navbar.scss */
+    /* line 165, scss/components/_navbar.scss */
     .navbar-toggler span,
     .navbar-toggler span::before,
     .navbar-toggler span::after {
@@ -1215,24 +1223,24 @@ $breakpoint argument choices:
       width: 28px;
       border-radius: 4px;
       transition: all ease-in-out 0.3s; }
-    /* line 169, scss/components/_navbar.scss */
+    /* line 178, scss/components/_navbar.scss */
     .navbar-toggler span::before {
       transform: translateY(-8px); }
-    /* line 173, scss/components/_navbar.scss */
+    /* line 182, scss/components/_navbar.scss */
     .navbar-toggler span::after {
       transform: translateY(5px); }
 
 @media (max-width: 800px) {
-  /* line 187, scss/components/_navbar.scss */
+  /* line 196, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span {
     /* transform: rotate(90deg); */
     background-color: transparent;
     /* transform: scale(0.85) rotate(270deg); */ }
-  /* line 193, scss/components/_navbar.scss */
+  /* line 202, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span::before {
     transform: translateY(0px) rotate(45deg);
     /* transform: translateY(0px) scale(0.75) rotate(45deg); */ }
-  /* line 198, scss/components/_navbar.scss */
+  /* line 207, scss/components/_navbar.scss */
   .navbar .navbar-toggler.open-navbar-toggler span::after {
     transform: translateY(-3px) rotate(-45deg);
     /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */ } }
