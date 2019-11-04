@@ -1,37 +1,37 @@
-#wrap {
+.carousel__container {
     height: 100vh;
     width: 100%;
     display: grid;
     justify-items: center;
 
-    h1 {
+    .carousel__title {
         text-align: center;
         font-size: $second-font-size;
         color: $color-decoration;
         margin-top: 50px;
     }
 
-    #showcase {
+    .carousel__images {
         width: 100%;
         height: 460px;
 
-        img {
+        .carousel__img {
             cursor: pointer;
             opacity: .8;
         }
     }
 
-    #item-title {
+    .carousel__text {
         color: #000;
         font-size: $main-font-size;
         text-align: center;
         margin-top: -50px;
     }
 
-    .nav {
+    .carousel__nav {
         text-align: center;
 
-        button {
+        .carousel__button {
             width: 60px;
             height: 60px;
             color: #fff;

@@ -811,36 +811,36 @@ $breakpoint argument choices:
     hyphens: auto; }
 
 /* line 1, scss/components/_carousel.scss */
-#wrap {
+.carousel__container {
   height: 100vh;
   width: 100%;
   display: grid;
   justify-items: center; }
   /* line 7, scss/components/_carousel.scss */
-  #wrap h1 {
+  .carousel__container .carousel__title {
     text-align: center;
     font-size: calc(13px + 1.3vw);
     color: #c2682f;
     margin-top: 50px; }
   /* line 14, scss/components/_carousel.scss */
-  #wrap #showcase {
+  .carousel__container .carousel__images {
     width: 100%;
     height: 460px; }
     /* line 18, scss/components/_carousel.scss */
-    #wrap #showcase img {
+    .carousel__container .carousel__images .carousel__img {
       cursor: pointer;
       opacity: .8; }
   /* line 24, scss/components/_carousel.scss */
-  #wrap #item-title {
+  .carousel__container .carousel__text {
     color: #000;
     font-size: calc(13px + 1vw);
     text-align: center;
     margin-top: -50px; }
   /* line 31, scss/components/_carousel.scss */
-  #wrap .nav {
+  .carousel__container .carousel__nav {
     text-align: center; }
     /* line 34, scss/components/_carousel.scss */
-    #wrap .nav button {
+    .carousel__container .carousel__nav .carousel__button {
       width: 60px;
       height: 60px;
       color: #fff;
@@ -852,11 +852,11 @@ $breakpoint argument choices:
       transition: .2s;
       font-size: xx-large; }
       /* line 47, scss/components/_carousel.scss */
-      #wrap .nav button:focus {
+      .carousel__container .carousel__nav .carousel__button:focus {
         border: none;
         outline: none; }
       /* line 52, scss/components/_carousel.scss */
-      #wrap .nav button:hover {
+      .carousel__container .carousel__nav .carousel__button:hover {
         transform: scale(1.1, 1.1); }
 
 /* line 1, scss/components/_content.scss */

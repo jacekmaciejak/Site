@@ -5,8 +5,8 @@ $(function() {
     yPos: 42,
     yRadius: 50,
     farScale: 0.5,
-    buttonLeft: $(".nav > .left"),
-    buttonRight: $(".nav > .right"),
+    buttonLeft: $(".carousel__nav > .carousel__button--left"),
+    buttonRight: $(".carousel__nav > .carousel__button--right"),
     autoPlay: true,
     bringToFront: true,
 
@@ -25,7 +25,7 @@ $(function() {
     title.css("opacity", 0.5 + 0.5 * c);
   }
 
-  $(".nav > button").click(function(e) {
+  $(".carousel__nav > .carousel__button").click(function(e) {
     var b = $(e.target).addClass("down");
     setTimeout(function() {
       b.removeClass("down");
@@ -35,11 +35,11 @@ $(function() {
   $(document).keydown(function(e) {
     switch (e.keyCode) {
       case 37:
-        $(".nav > .left").click();
+        $(".carousel__nav > .carousel__button--left").click();
         break;
 
       case 39:
-        $(".nav > .right").click();
+        $(".carousel__nav > carousel__button--right").click();
     }
   });
 });
