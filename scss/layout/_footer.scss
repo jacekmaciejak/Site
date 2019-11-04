@@ -1,7 +1,6 @@
 .footer {
     background-color: $color-grey-dark-3;
     padding: 4rem 0;
-    font-size: $footer-font-size;
     color: $color-grey-light-1;
     width: 100%;
     display: flex;
@@ -60,9 +59,9 @@
     &__navigation {
         border-top: 1px solid $color-decoration;
         padding-top: 2rem;
-        // display: inline-block;
         letter-spacing: 1px;
         text-align: center;
+        font-size: $footer-font-size;
 
         @include respond(tab-land) {
             //width < 1200
@@ -86,6 +85,8 @@
         padding-top: 2rem;
         text-align: center;
         letter-spacing: 1px;
+        font-size: $footer-font-size;
+
 
         @include respond(tab-land) {
             order: 3;
