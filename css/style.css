@@ -362,13 +362,13 @@ $breakpoint argument choices:
         color: transparent;
         letter-spacing: .2rem;
         transition: all .2s;
-        margin-bottom: 4rem !important; }
+        margin-bottom: 4rem; }
         @media (max-width: 56.25em) {
           /* line 99, scss/components/_popup.scss */
           .popup__footer .popup__content .popup__right .heading__secondary {
             font-size: 3rem;
             margin-top: 5rem;
-            margin-bottom: 3rem !important; } }
+            margin-bottom: 3rem; } }
         @media (max-width: 37.5em) {
           /* line 99, scss/components/_popup.scss */
           .popup__footer .popup__content .popup__right .heading__secondary {
@@ -382,7 +382,7 @@ $breakpoint argument choices:
         font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 1.5rem !important; }
+        margin-bottom: 1.5rem; }
       /* line 135, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .popup__text {
         font-size: 1.4rem;
@@ -874,6 +874,24 @@ $breakpoint argument choices:
     background-color: #eae5e5;
     transition: all ease .5s; }
 
+/* line 1, scss/components/_loader.scss */
+.loader {
+  position: fixed;
+  z-index: 9999999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 14, scss/components/_loader.scss */
+.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -925,6 +943,11 @@ $breakpoint argument choices:
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
 
 /* line 1, scss/base/_base.scss */
 *,
@@ -1079,11 +1102,11 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-/* line 24, scss/main.scss */
+/* line 25, scss/main.scss */
 [class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
   transition: all .3s ease; }
 
-/* line 33, scss/main.scss */
+/* line 34, scss/main.scss */
 *,
 *:before,
 *:after {
@@ -1091,7 +1114,7 @@ body {
   margin: 0;
   padding: 0; }
 
-/* line 41, scss/main.scss */
+/* line 42, scss/main.scss */
 body {
   font-family: 'PT Sans', sans-serif;
   height: 100%; }
