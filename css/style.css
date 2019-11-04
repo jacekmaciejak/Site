@@ -45,7 +45,7 @@ $breakpoint argument choices:
     text-decoration: none;
     color: #c2682f;
     list-style: none; }
-    /* line 30, scss/layout/_footer.scss */
+    /* line 29, scss/layout/_footer.scss */
     .footer__logo span {
       font-size: calc(13px + 1.3vw);
       font-weight: 700; }
@@ -160,7 +160,6 @@ $breakpoint argument choices:
   display: grid;
   align-items: center;
   justify-content: start;
-  width: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -168,21 +167,23 @@ $breakpoint argument choices:
   @media (max-width: 56.25em) {
     /* line 1, scss/layout/_header.scss */
     .header {
-      background-position: calc(100% + 200px); } }
+      background-position: calc(100% + 200px);
+      justify-content: center; } }
   /* line 26, scss/layout/_header.scss */
-  .header_title {
+  .header__container {
     margin-left: 20%;
     font-size: calc(13px + 1vw);
     width: 100%; }
-    /* line 31, scss/layout/_header.scss */
-    .header_title h5 {
-      text-align: end; }
     @media (max-width: 56.25em) {
       /* line 26, scss/layout/_header.scss */
-      .header_title {
-        display: block;
-        margin: 0 auto;
-        text-align: center; } }
+      .header__container {
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px; } }
+    /* line 39, scss/layout/_header.scss */
+    .header__container .header__subtitle {
+      text-align: end; }
 
 /* line 1, scss/components/_slider.scss */
 .swiper-container {
@@ -864,14 +865,14 @@ $breakpoint argument choices:
   width: 100%;
   color: #000; }
   /* line 6, scss/components/_content.scss */
-  .content-container {
+  .content__container {
     padding: 70px 60px; }
     @media (max-width: 56.25em) {
       /* line 6, scss/components/_content.scss */
-      .content-container {
+      .content__container {
         padding: 20px 20px; } }
     /* line 14, scss/components/_content.scss */
-    .content-container .content-block {
+    .content__container .content__block {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -880,11 +881,11 @@ $breakpoint argument choices:
       width: 100%; }
       @media (max-width: 56.25em) {
         /* line 14, scss/components/_content.scss */
-        .content-container .content-block {
+        .content__container .content__block {
           flex-direction: column;
           height: 80vh; } }
       /* line 28, scss/components/_content.scss */
-      .content-container .content-block__details {
+      .content__container .content__block .content__details {
         padding: 60px;
         display: flex;
         flex: 0 0 45%;
@@ -901,54 +902,47 @@ $breakpoint argument choices:
         z-index: 999; }
         @media (max-width: 75em) {
           /* line 28, scss/components/_content.scss */
-          .content-container .content-block__details {
+          .content__container .content__block .content__details {
             padding: 0 20px;
             height: 60%; } }
         @media (max-width: 56.25em) {
           /* line 28, scss/components/_content.scss */
-          .content-container .content-block__details {
+          .content__container .content__block .content__details {
             left: 0;
             height: 50vh;
             padding: 20px; } }
         /* line 57, scss/components/_content.scss */
-        .content-container .content-block__details p {
-          font-weight: 400;
-          margin-bottom: 20px;
-          font-size: calc(5px + 1vw);
-          line-height: 28px; }
-        /* line 64, scss/components/_content.scss */
-        .content-container .content-block__details h2 {
+        .content__container .content__block .content__details .content__title {
           text-transform: capitalize;
           font-size: calc(13px + 1.3vw);
-          line-height: 76px; }
-        /* line 70, scss/components/_content.scss */
-        .content-container .content-block__details__dek {
-          margin-top: 75px; }
-          /* line 73, scss/components/_content.scss */
-          .content-container .content-block__details__dek p {
-            font-size: 20px;
-            line-height: 28px; }
-      /* line 80, scss/components/_content.scss */
-      .content-container .content-block .position {
+          line-height: 50px; }
+        /* line 63, scss/components/_content.scss */
+        .content__container .content__block .content__details .content__text {
+          margin-top: 20px;
+          font-size: calc(5px + 1vw);
+          line-height: 28px;
+          margin-bottom: 20px; }
+      /* line 71, scss/components/_content.scss */
+      .content__container .content__block .content__details--position {
         left: 50px; }
         @media (max-width: 56.25em) {
-          /* line 80, scss/components/_content.scss */
-          .content-container .content-block .position {
+          /* line 71, scss/components/_content.scss */
+          .content__container .content__block .content__details--position {
             left: 0px; } }
-      /* line 89, scss/components/_content.scss */
-      .content-container .content-block__media {
+      /* line 80, scss/components/_content.scss */
+      .content__container .content__block .content__media {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center; }
         @media (max-width: 56.25em) {
-          /* line 89, scss/components/_content.scss */
-          .content-container .content-block__media {
+          /* line 80, scss/components/_content.scss */
+          .content__container .content__block .content__media {
             margin-top: -120px;
             position: relative;
             z-index: 99999; } }
-        /* line 102, scss/components/_content.scss */
-        .content-container .content-block__media img {
+        /* line 93, scss/components/_content.scss */
+        .content__container .content__block .content__media .content__img {
           height: 100%;
           width: 100%;
           display: flex;
@@ -960,34 +954,34 @@ $breakpoint argument choices:
           background-attachment: fixed;
           background-size: cover; }
           @media (max-width: 75em) {
-            /* line 102, scss/components/_content.scss */
-            .content-container .content-block__media img {
+            /* line 93, scss/components/_content.scss */
+            .content__container .content__block .content__media .content__img {
               height: 80%; } }
           @media (max-width: 56.25em) {
-            /* line 102, scss/components/_content.scss */
-            .content-container .content-block__media img {
+            /* line 93, scss/components/_content.scss */
+            .content__container .content__block .content__media .content__img {
               max-height: 40vh;
               max-width: 100%; } }
     @media (max-width: 56.25em) {
-      /* line 134, scss/components/_content.scss */
-      .content-container .contente-block__revers {
+      /* line 125, scss/components/_content.scss */
+      .content__container .contente__block--revers {
         flex-direction: column-reverse; } }
-  /* line 142, scss/components/_content.scss */
-  .content-container:nth-child(2) {
+  /* line 133, scss/components/_content.scss */
+  .content__container:nth-child(2) {
     padding: 0 60px; }
     @media (max-width: 75em) {
-      /* line 142, scss/components/_content.scss */
-      .content-container:nth-child(2) {
+      /* line 133, scss/components/_content.scss */
+      .content__container:nth-child(2) {
         padding: 0; } }
     @media (max-width: 56.25em) {
-      /* line 142, scss/components/_content.scss */
-      .content-container:nth-child(2) {
+      /* line 133, scss/components/_content.scss */
+      .content__container:nth-child(2) {
         padding: 20px 20px; } }
 
 /* line 1, scss/components/_clock.scss */
 .clock {
   position: fixed;
-  z-index: 99999;
+  z-index: 9999999;
   width: 150px;
   height: 150px;
   display: flex;
@@ -1011,7 +1005,7 @@ $breakpoint argument choices:
     height: 15px;
     background: #848484;
     border: 2px solid #fff;
-    z-index: 9999;
+    z-index: 99999999;
     border-radius: 50%; }
   /* line 34, scss/components/_clock.scss */
   .clock .hour,

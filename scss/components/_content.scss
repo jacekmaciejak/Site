@@ -3,7 +3,7 @@
     width: 100%;
     color: #000;
 
-    &-container {
+    &__container {
         padding: 70px 60px;
 
         @include respond(tab-port) {
@@ -11,7 +11,7 @@
             padding: 20px 20px;
         }
 
-        .content-block {
+        .content__block {
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
@@ -25,7 +25,7 @@
                 height: 80vh;
             }
 
-            &__details {
+            .content__details {
                 padding: 60px;
                 display: flex;
                 flex: 0 0 45%;
@@ -54,30 +54,21 @@
                     padding: 20px;
                 }
 
-                p {
-                    font-weight: 400;
-                    margin-bottom: 20px;
-                    font-size: $third-font-size;
-                    line-height: 28px;
-                }
-
-                h2 {
+                .content__title {
                     text-transform: capitalize;
                     font-size: $second-font-size;
-                    line-height: 76px;
+                    line-height: 50px;
                 }
 
-                &__dek {
-                    margin-top: 75px;
-
-                    p {
-                        font-size: 20px;
-                        line-height: 28px;
-                    }
+                .content__text {
+                    margin-top: 20px;
+                    font-size: $third-font-size;
+                    line-height: 28px;
+                    margin-bottom: 20px;
                 }
             }
 
-            .position {
+            .content__details--position {
                 left: 50px;
 
                 @include respond(tab-port) {
@@ -86,7 +77,7 @@
                 }
             }
 
-            &__media {
+            .content__media {
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -99,7 +90,7 @@
                     z-index: 99999;
                 }
 
-                img {
+                .content__img {
                     height: 100%;
                     width: 100%;
                     display: flex;
@@ -131,7 +122,7 @@
             }
         }
 
-        .contente-block__revers {
+        .contente__block--revers {
             @include respond(tab-port) {
                 //width < 900
                 flex-direction: column-reverse;
@@ -139,7 +130,7 @@
         }
     }
 
-    &-container:nth-child(2) {
+    &__container:nth-child(2) {
 
         padding: 0 60px;
 

@@ -1,6 +1,6 @@
 .clock {
     position: fixed;
-    z-index: 99999;
+    z-index: 9999999;
     width: 150px;
     height: 150px;
     display: flex;
@@ -27,7 +27,7 @@
         height: 15px;
         background: #848484;
         border: 2px solid #fff;
-        z-index: 9999;
+        z-index: 99999999;
         border-radius: 50%;
     }
 
