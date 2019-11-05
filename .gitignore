@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules/
+/scss/
 
 /Cloud9/
 /scss/
