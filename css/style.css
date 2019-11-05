@@ -659,7 +659,7 @@ $breakpoint argument choices:
 
 /* line 1, scss/components/_navbar.scss */
 .navbar {
-  background-color: #fff;
+  background-color: #f7f7f7;
   width: 100%;
   padding: 0 30px;
   position: fixed;
