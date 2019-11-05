@@ -2,7 +2,6 @@
 
 new site - project
 
-https://jacekmaciejak.github.io/Site/
 
 Technology:
 sass
