@@ -41,6 +41,8 @@
         font-size: $main-font-size;
         text-transform: uppercase;
         text-align: center;
+        flex-basis: 20%;
+        margin-top: -22px;
 
         span {
             font-size: $second-font-size;
@@ -62,6 +64,7 @@
         letter-spacing: 1px;
         text-align: center;
         font-size: $footer-font-size;
+        flex-basis: 40%;
 
         @include respond(tab-land) {
             //width < 1200
@@ -86,7 +89,7 @@
         text-align: center;
         letter-spacing: 1px;
         font-size: $footer-font-size;
-
+        flex-basis: 40%;
 
         @include respond(tab-land) {
             order: 3;

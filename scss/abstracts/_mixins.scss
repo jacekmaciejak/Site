@@ -11,7 +11,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 
@@ -45,6 +44,7 @@ $breakpoint argument choices:
             //600px
             @content
         }
+
         ;
     }
 
@@ -53,6 +53,7 @@ $breakpoint argument choices:
             //740px
             @content
         }
+
         ;
     }
 
@@ -61,6 +62,7 @@ $breakpoint argument choices:
             //800px
             @content
         }
+
         ;
     }
 
@@ -69,20 +71,25 @@ $breakpoint argument choices:
             //900px
             @content
         }
+
         ;
     }
+
     @if $breakpoint==tab-land {
         @media (max-width: 75em) {
             //1200px
             @content
         }
+
         ;
     }
+
     @if $breakpoint==big-desktop {
         @media (min-width: 112.5em) {
             //1800px
             @content
         }
+
         ;
     }
 }
