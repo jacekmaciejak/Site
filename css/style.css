@@ -125,19 +125,19 @@ $breakpoint argument choices:
     .header {
       background-position: calc(100% + 200px);
       justify-content: center; } }
-  /* line 26, scss/layout/_header.scss */
+  /* line 45, scss/layout/_header.scss */
   .header__container {
     margin-left: 20%;
     font-size: calc(13px + 1vw);
     width: 100%; }
     @media (max-width: 56.25em) {
-      /* line 26, scss/layout/_header.scss */
+      /* line 45, scss/layout/_header.scss */
       .header__container {
         width: 100%;
         margin: 0;
         padding-left: 20px;
         padding-right: 20px; } }
-    /* line 39, scss/layout/_header.scss */
+    /* line 58, scss/layout/_header.scss */
     .header__container .header__subtitle {
       text-align: end; }
 
@@ -872,12 +872,14 @@ $breakpoint argument choices:
   transition: all ease .5s;
   font-size: 1rem;
   cursor: pointer;
-  display: block; }
-  /* line 13, scss/components/_button.scss */
+  display: block;
+  box-shadow: 0 20px 40px -10px #818181; }
+  /* line 15, scss/components/_button.scss */
   .btn:hover {
     background-color: #eae5e5;
-    transition: all ease .5s; }
-  /* line 18, scss/components/_button.scss */
+    transition: all ease .5s;
+    transform: scale(1.1); }
+  /* line 21, scss/components/_button.scss */
   .btn__content {
     text-decoration: none;
     color: #000; }
