@@ -1,12 +1,12 @@
-const cartBtn = document.querySelector(".cart-btn");
-const closeCartBtn = document.querySelector(".close-cart");
-const clearCartBtn = document.querySelector(".clear-cart");
+const cartBtn = document.querySelector(".icon__btn");
+const closeCartBtn = document.querySelector(".cart__close");
+const clearCartBtn = document.querySelector(".cart__clear");
 const cartDOM = document.querySelector(".cart");
-const cartOverlay = document.querySelector(".cart-overlay");
-const cartItems = document.querySelector(".cart-items");
-const cartTotal = document.querySelector(".cart-total");
-const cartContent = document.querySelector(".cart-content");
-const productsDOM = document.querySelector(".products-center");
+const cartOverlay = document.querySelector(".cart__overlay");
+const cartItems = document.querySelector(".cart__items");
+const cartTotal = document.querySelector(".cart__total");
+const cartContent = document.querySelector(".cart__content");
+const productsDOM = document.querySelector(".products__center");
 //CART
 let cart = [];
 //buttons
@@ -42,7 +42,7 @@ class UI {
                     <img src=${product.image} alt="product" class="product-img">
                     <button class="bag-btn" data-id=${product.id}>
                         <i class="fas fa-shopping-cart"></i>
-                        add to cart
+                        dodaj do koszyka
                     </button>
                 </div>
                 <h3>${product.title}</h3>
@@ -52,7 +52,7 @@ class UI {
     });
     productsDOM.innerHTML = result;
   }
-  //funkcja pobierajaca przycisk z kart, musimy ja dodac po wczystaniu kart
+  //funkcja pobierajaca przycisk z kart, musimy ja dodac po wczytaniu kart
   getBagButtons() {
     const buttons = [...document.querySelectorAll(".bag-btn")];
     buttonsDOM = buttons;
@@ -60,11 +60,11 @@ class UI {
       let id = button.dataset.id;
       let inCart = cart.find(item => item.id === id);
       if (inCart) {
-        button.innerText = "in Cart";
+        button.innerText = "wybrano";
         button.disabled = true;
       }
       button.addEventListener("click", e => {
-        e.target.innerText = "in Cart";
+        e.target.innerText = "wybrano";
         e.target.disabled = true;
         //get product from products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
@@ -176,7 +176,7 @@ class UI {
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
     button.disabled = false;
-    button.innerHTML = `<i class="fas fa-shopping-cart">add to cart</i>`;
+    button.innerHTML = `<i class="fas fa-shopping-cart">dodaj do koszyka</i>`;
   }
   getSingleButton(id) {
     return buttonsDOM.find(button => button.dataset.id === id);
