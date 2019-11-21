@@ -18,7 +18,6 @@ $breakpoint argument choices:
 1em = 16px
 
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 /* line 1, scss/layout/_footer.scss */
 .footer {
   background-color: #333;
@@ -349,7 +348,7 @@ $breakpoint argument choices:
         position: absolute;
         top: 2rem;
         right: 3rem;
-        font-size: 7rem;
+        font-size: 5rem;
         text-decoration: none;
         display: inline-block;
         -webkit-transition: all .2s;
@@ -360,7 +359,7 @@ $breakpoint argument choices:
         color: #c2682f; }
       /* line 99, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .heading__secondary {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         font-weight: 700;
         display: inline-block;
@@ -414,7 +413,7 @@ $breakpoint argument choices:
   /* line 7, scss/components/_carousel.scss */
   .carousel__container .carousel__title {
     text-align: center;
-    font-size: calc(13px + 1.3vw);
+    font-size: 2.5rem;
     color: #c2682f;
     margin-top: 50px; }
   /* line 14, scss/components/_carousel.scss */
@@ -835,7 +834,7 @@ $breakpoint argument choices:
 /* line 1, scss/components/_scrollTopButton.scss */
 #scrollToTopButton {
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
   bottom: 140px;
   right: 40px;
   height: 60px;
@@ -913,32 +912,28 @@ $breakpoint argument choices:
   --mainTransition: all 0.3s linear; }
 
 /* --------------- Products ---------------- */
-/* line 13, scss/components/_cards.scss */
-.products__container {
-  height: 90vh;
-  border: 1px solid #c2682f; }
-
-/* line 18, scss/components/_cards.scss */
+/* line 14, scss/components/_cards.scss */
 .cart-btn {
   position: relative;
   cursor: pointer; }
 
-/* line 23, scss/components/_cards.scss */
+/* line 19, scss/components/_cards.scss */
 .cart-items {
   position: absolute;
   top: -8px;
   right: -8px;
-  background: var(--primaryColor);
+  background: #c2682f;
   padding: 0 5px;
   border-radius: 30%;
   color: var(--mainWhite); }
 
-/* line 33, scss/components/_cards.scss */
+/* line 29, scss/components/_cards.scss */
 .products {
   padding: 4rem 0; }
 
-/* line 37, scss/components/_cards.scss */
+/* line 33, scss/components/_cards.scss */
 .section-title {
+  width: 90vw;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 70px;
@@ -948,7 +943,7 @@ $breakpoint argument choices:
   margin: 0 auto;
   margin-bottom: 50px; }
 
-/* line 49, scss/components/_cards.scss */
+/* line 45, scss/components/_cards.scss */
 .section-title h2 {
   justify-self: center;
   font-size: 2.5rem;
@@ -956,11 +951,11 @@ $breakpoint argument choices:
   letter-spacing: var(--mainSpacing);
   color: #c2682f; }
 
-/* line 57, scss/components/_cards.scss */
+/* line 53, scss/components/_cards.scss */
 .nav-center {
   justify-self: end; }
 
-/* line 61, scss/components/_cards.scss */
+/* line 57, scss/components/_cards.scss */
 .products-center {
   width: 90vw;
   margin: 0 auto;
@@ -970,17 +965,18 @@ $breakpoint argument choices:
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem; }
 
-/* line 71, scss/components/_cards.scss */
+/* line 67, scss/components/_cards.scss */
 .img-container {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px #818181; }
 
-/* line 76, scss/components/_cards.scss */
+/* line 73, scss/components/_cards.scss */
 .bag-btn {
   position: absolute;
   top: 70%;
   right: 0;
-  background: var(--primaryColor);
+  background: #f25715;
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
@@ -990,30 +986,30 @@ $breakpoint argument choices:
   transform: translateX(101%);
   cursor: pointer; }
 
-/* line 91, scss/components/_cards.scss */
+/* line 88, scss/components/_cards.scss */
 .bag-btn:hover {
   color: var(--mainWhite); }
 
-/* line 95, scss/components/_cards.scss */
+/* line 92, scss/components/_cards.scss */
 .fa-shopping-cart {
   margin-right: 0.5rem; }
 
-/* line 99, scss/components/_cards.scss */
+/* line 96, scss/components/_cards.scss */
 .img-container:hover .bag-btn {
   transform: translateX(0); }
 
-/* line 103, scss/components/_cards.scss */
+/* line 100, scss/components/_cards.scss */
 .product-img {
   display: block;
   width: 100%;
   min-height: 12rem;
   transition: var(--mainTransition); }
 
-/* line 110, scss/components/_cards.scss */
+/* line 107, scss/components/_cards.scss */
 .img-container:hover .product-img {
   opacity: 0.5; }
 
-/* line 114, scss/components/_cards.scss */
+/* line 111, scss/components/_cards.scss */
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -1021,16 +1017,16 @@ $breakpoint argument choices:
   letter-spacing: var(--mainSpacing);
   text-align: center; }
 
-/* line 122, scss/components/_cards.scss */
+/* line 119, scss/components/_cards.scss */
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: #c2682f;
   text-align: center; }
 
 /* ---------------End of Products ---------------- */
 /* --------------- Cart ---------------- */
-/* line 131, scss/components/_cards.scss */
+/* line 128, scss/components/_cards.scss */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -1039,16 +1035,16 @@ $breakpoint argument choices:
   height: 100%;
   transition: var(--mainTransition);
   background: rgba(240, 157, 81, 0.5);
-  z-index: 2;
+  z-index: 9999999;
   visibility: hidden; }
 
-/* line 143, scss/components/_cards.scss */
+/* line 140, scss/components/_cards.scss */
 .cart {
   position: fixed;
-  top: 0;
+  top: 80px;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 80px);
   overflow: scroll;
   z-index: 3;
   background: #e7e2dd;
@@ -1056,34 +1052,52 @@ $breakpoint argument choices:
   transition: var(--mainTransition);
   transform: translateX(100%); }
 
-/* line 157, scss/components/_cards.scss */
+/* line 154, scss/components/_cards.scss */
 .showCart {
   transform: translateX(0); }
 
-/* line 161, scss/components/_cards.scss */
+/* line 158, scss/components/_cards.scss */
 .transparentBcg {
   visibility: visible; }
 
 @media screen and (min-width: 768px) {
-  /* line 166, scss/components/_cards.scss */
+  /* line 163, scss/components/_cards.scss */
   .cart {
     width: 30vw;
     min-width: 450px; } }
 
-/* line 172, scss/components/_cards.scss */
+/* line 169, scss/components/_cards.scss */
 .close-cart {
-  font-size: 1.7rem;
-  cursor: pointer; }
+  font-size: 2rem;
+  cursor: pointer;
+  color: #c2682f; }
 
-/* line 177, scss/components/_cards.scss */
+/* line 175, scss/components/_cards.scss */
 .cart h2 {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem; }
 
+/* line 182, scss/components/_cards.scss */
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: #c2682f;
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer; }
+
+/* line 194, scss/components/_cards.scss */
+.banner-btn:hover {
+  background: transparent;
+  color: #f25715; }
+
 /*---------- Cart Item -------------------- */
-/* line 185, scss/components/_cards.scss */
+/* line 200, scss/components/_cards.scss */
 .cart-item {
   display: grid;
   align-items: center;
@@ -1091,45 +1105,49 @@ $breakpoint argument choices:
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0; }
 
-/* line 193, scss/components/_cards.scss */
+/* line 208, scss/components/_cards.scss */
 .cart-item img {
   width: 75px;
   height: 75px; }
 
-/* line 198, scss/components/_cards.scss */
+/* line 213, scss/components/_cards.scss */
 .cart-item h4 {
   font-size: 0.85rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing); }
 
-/* line 204, scss/components/_cards.scss */
+/* line 219, scss/components/_cards.scss */
 .cart-item h5 {
   margin: 0.5rem 0;
   letter-spacing: var(--mainSpacing); }
 
-/* line 209, scss/components/_cards.scss */
+/* line 224, scss/components/_cards.scss */
 .item-amount {
   text-align: center; }
 
-/* line 213, scss/components/_cards.scss */
+/* line 228, scss/components/_cards.scss */
 .remove-item {
   color: grey;
   cursor: pointer; }
 
-/* line 218, scss/components/_cards.scss */
+/* line 233, scss/components/_cards.scss */
+.remove-item:hover {
+  color: #f25715; }
+
+/* line 237, scss/components/_cards.scss */
 .fa-chevron-up,
 .fa-chevron-down {
-  color: var(--primaryColor);
+  color: #f25715;
   cursor: pointer; }
 
 /*---------- End of Cart Item -------------------- */
-/* line 226, scss/components/_cards.scss */
+/* line 245, scss/components/_cards.scss */
 .cart-footer {
   margin-top: 2rem;
   letter-spacing: var(--mainSpacing);
   text-align: center; }
 
-/* line 232, scss/components/_cards.scss */
+/* line 251, scss/components/_cards.scss */
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem; }
@@ -1156,3 +1174,9 @@ $breakpoint argument choices:
 body {
   font-family: 'PT Sans', sans-serif;
   height: 100%; }
+
+/* line 45, scss/main.scss */
+hr {
+  width: 60vw;
+  margin: 0 auto;
+  opacity: .5; }

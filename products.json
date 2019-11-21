@@ -4,7 +4,7 @@
         "id": "1"
       },
       "fields": {
-        "title": "queen panel bed",
+        "title": "Lorem ipsum dolor",
         "price": 10.99,
         "image": {
           "fields": {
@@ -20,7 +20,7 @@
         "id": "2"
       },
       "fields": {
-        "title": "king panel bed",
+        "title": "Lorem ipsum dolor",
         "price": 12.99,
         "image": {
           "fields": {
@@ -36,7 +36,7 @@
         "id": "3"
       },
       "fields": {
-        "title": "single panel bed",
+        "title": "Lorem ipsum dolor",
         "price": 12.99,
         "image": {
           "fields": {
@@ -52,7 +52,7 @@
         "id": "4"
       },
       "fields": {
-        "title": "twin panel bed",
+        "title": "Lorem ipsum dolor",
         "price": 22.99,
         "image": {
           "fields": {
@@ -68,7 +68,7 @@
         "id": "5"
       },
       "fields": {
-        "title": "fridge",
+        "title": "Lorem ipsum dolor",
         "price": 88.99,
         "image": {
           "fields": {
@@ -84,7 +84,7 @@
         "id": "6"
       },
       "fields": {
-        "title": "dresser",
+        "title": "Lorem ipsum dolor",
         "price": 32.99,
         "image": {
           "fields": {
@@ -100,7 +100,7 @@
         "id": "7"
       },
       "fields": {
-        "title": "couch",
+        "title": "Lorem ipsum dolor",
         "price": 45.99,
         "image": {
           "fields": {
@@ -116,7 +116,7 @@
         "id": "8"
       },
       "fields": {
-        "title": "table",
+        "title": "Lorem ipsum dolor",
         "price": 33.99,
         "image": {
           "fields": {
