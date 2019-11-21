@@ -111,7 +111,7 @@ $breakpoint argument choices:
   position: relative;
   object-fit: cover;
   object-position: center;
-  background: url("../../img/img5.jpg");
+  background: url("../img/img5.jpg");
   z-index: 999;
   display: grid;
   align-items: center;
