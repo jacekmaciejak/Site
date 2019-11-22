@@ -1,4 +1,4 @@
-const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarToggler = document.querySelector(".navbar__toggler");
 const navbarMenu = document.querySelector(".navbar ul");
 const navbarLinks = document.querySelectorAll(".navbar a");
 
