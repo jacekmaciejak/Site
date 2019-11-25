@@ -227,18 +227,18 @@ $breakpoint argument choices:
 
 /* line 1, scss/components/_slider.scss */
 .swiper-container {
-  height: 80vh;
+  height: 100vh;
   transition: opacity .6s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 20px 40px -10px #818181; }
   /* line 9, scss/components/_slider.scss */
-  .swiper-container .swiper-wrapper {
+  .swiper-container.swiper-wrapper {
     width: 100%; }
   /* line 13, scss/components/_slider.scss */
   .swiper-container.swiper-container-coverflow {
-    padding-top: 3%; }
+    padding-top: 10%; }
   /* line 17, scss/components/_slider.scss */
   .swiper-container.loading {
     opacity: 0;
@@ -493,31 +493,32 @@ $breakpoint argument choices:
   height: 100vh;
   width: 100%;
   display: grid;
-  justify-items: center; }
-  /* line 7, scss/components/_carousel.scss */
+  justify-items: center;
+  padding: 70px 60px; }
+  /* line 9, scss/components/_carousel.scss */
   .carousel__container .carousel__title {
     text-align: center;
     font-size: 2.5rem;
     color: #c2682f;
     margin-top: 50px; }
-  /* line 14, scss/components/_carousel.scss */
+  /* line 16, scss/components/_carousel.scss */
   .carousel__container .carousel__images {
     width: 100%;
     height: 460px; }
-    /* line 18, scss/components/_carousel.scss */
+    /* line 20, scss/components/_carousel.scss */
     .carousel__container .carousel__images .carousel__img {
       cursor: pointer;
       opacity: .8; }
-  /* line 24, scss/components/_carousel.scss */
+  /* line 26, scss/components/_carousel.scss */
   .carousel__container .carousel__text {
     color: #000;
     font-size: calc(13px + 1vw);
     text-align: center;
     margin-top: -50px; }
-  /* line 31, scss/components/_carousel.scss */
+  /* line 33, scss/components/_carousel.scss */
   .carousel__container .carousel__nav {
     text-align: center; }
-    /* line 34, scss/components/_carousel.scss */
+    /* line 36, scss/components/_carousel.scss */
     .carousel__container .carousel__nav .carousel__button {
       width: 60px;
       height: 60px;
@@ -529,35 +530,36 @@ $breakpoint argument choices:
       border-radius: 50%;
       transition: .2s;
       font-size: xx-large; }
-      /* line 47, scss/components/_carousel.scss */
+      /* line 49, scss/components/_carousel.scss */
       .carousel__container .carousel__nav .carousel__button:focus {
         border: none;
         outline: none; }
-      /* line 52, scss/components/_carousel.scss */
+      /* line 54, scss/components/_carousel.scss */
       .carousel__container .carousel__nav .carousel__button:hover {
         transform: scale(1.1, 1.1); }
 
 /* line 1, scss/components/_content.scss */
 .content {
   background-color: #fafafa;
-  width: 100%;
-  color: #000; }
-  /* line 6, scss/components/_content.scss */
+  width: 100%; }
+  /* line 5, scss/components/_content.scss */
   .content__main {
     font-size: 2.5rem;
     color: #c2682f;
-    height: 150px;
+    height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center; }
-  /* line 15, scss/components/_content.scss */
+    justify-content: center;
+    position: relative;
+    top: 70px; }
+  /* line 17, scss/components/_content.scss */
   .content__container {
     padding: 70px 60px; }
     @media (max-width: 56.25em) {
-      /* line 15, scss/components/_content.scss */
+      /* line 17, scss/components/_content.scss */
       .content__container {
         padding: 20px 20px; } }
-    /* line 23, scss/components/_content.scss */
+    /* line 25, scss/components/_content.scss */
     .content__container .content__block {
       display: flex;
       flex-direction: row-reverse;
@@ -566,11 +568,11 @@ $breakpoint argument choices:
       height: 50vh;
       width: 100%; }
       @media (max-width: 56.25em) {
-        /* line 23, scss/components/_content.scss */
+        /* line 25, scss/components/_content.scss */
         .content__container .content__block {
           flex-direction: column;
           height: 80vh; } }
-      /* line 37, scss/components/_content.scss */
+      /* line 39, scss/components/_content.scss */
       .content__container .content__block .content__details {
         padding: 60px;
         display: flex;
@@ -587,51 +589,51 @@ $breakpoint argument choices:
         position: relative;
         z-index: 999; }
         @media (max-width: 75em) {
-          /* line 37, scss/components/_content.scss */
+          /* line 39, scss/components/_content.scss */
           .content__container .content__block .content__details {
             padding: 0 20px;
             height: 60%; } }
         @media (max-width: 56.25em) {
-          /* line 37, scss/components/_content.scss */
+          /* line 39, scss/components/_content.scss */
           .content__container .content__block .content__details {
             left: 0;
             height: 50vh;
             padding: 20px; } }
-        /* line 66, scss/components/_content.scss */
+        /* line 68, scss/components/_content.scss */
         .content__container .content__block .content__details .content__title {
           text-transform: capitalize;
           font-size: calc(13px + 1.3vw);
           line-height: 50px; }
           @media (max-width: 56.25em) {
-            /* line 66, scss/components/_content.scss */
+            /* line 68, scss/components/_content.scss */
             .content__container .content__block .content__details .content__title {
               text-align: center; } }
-        /* line 77, scss/components/_content.scss */
+        /* line 79, scss/components/_content.scss */
         .content__container .content__block .content__details .content__text {
           margin-top: 20px;
           font-size: calc(10px + 1vw);
           line-height: 28px;
           margin-bottom: 20px; }
-      /* line 85, scss/components/_content.scss */
+      /* line 87, scss/components/_content.scss */
       .content__container .content__block .content__details--position {
         left: 50px; }
         @media (max-width: 56.25em) {
-          /* line 85, scss/components/_content.scss */
+          /* line 87, scss/components/_content.scss */
           .content__container .content__block .content__details--position {
             left: 0px; } }
-      /* line 94, scss/components/_content.scss */
+      /* line 96, scss/components/_content.scss */
       .content__container .content__block .content__media {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center; }
         @media (max-width: 56.25em) {
-          /* line 94, scss/components/_content.scss */
+          /* line 96, scss/components/_content.scss */
           .content__container .content__block .content__media {
             margin-top: -120px;
             position: relative;
             z-index: 9999; } }
-        /* line 107, scss/components/_content.scss */
+        /* line 109, scss/components/_content.scss */
         .content__container .content__block .content__media .content__img {
           height: 100%;
           width: 100%;
@@ -644,27 +646,27 @@ $breakpoint argument choices:
           background-attachment: fixed;
           background-size: cover; }
           @media (max-width: 75em) {
-            /* line 107, scss/components/_content.scss */
+            /* line 109, scss/components/_content.scss */
             .content__container .content__block .content__media .content__img {
               height: 80%; } }
           @media (max-width: 56.25em) {
-            /* line 107, scss/components/_content.scss */
+            /* line 109, scss/components/_content.scss */
             .content__container .content__block .content__media .content__img {
               max-height: 40vh;
               max-width: 100%; } }
     @media (max-width: 56.25em) {
-      /* line 139, scss/components/_content.scss */
+      /* line 141, scss/components/_content.scss */
       .content__container .contente__block--revers {
         flex-direction: column-reverse; } }
-  /* line 147, scss/components/_content.scss */
+  /* line 149, scss/components/_content.scss */
   .content__container:nth-child(3) {
     padding: 0 60px; }
     @media (max-width: 75em) {
-      /* line 147, scss/components/_content.scss */
+      /* line 149, scss/components/_content.scss */
       .content__container:nth-child(3) {
         padding: 0; } }
     @media (max-width: 56.25em) {
-      /* line 147, scss/components/_content.scss */
+      /* line 149, scss/components/_content.scss */
       .content__container:nth-child(3) {
         padding: 20px 20px; } }
 
@@ -701,13 +703,14 @@ $breakpoint argument choices:
   .clock .hour,
   .clock .min,
   .clock .sec {
-    position: absolute; }
-  /* line 40, scss/components/_clock.scss */
+    position: absolute;
+    z-index: 999999; }
+  /* line 41, scss/components/_clock.scss */
   .clock .hour,
   .clock .hr {
     width: 90px;
     height: 90px; }
-  /* line 46, scss/components/_clock.scss */
+  /* line 47, scss/components/_clock.scss */
   .clock .hr::before {
     content: '';
     position: absolute;
@@ -716,12 +719,12 @@ $breakpoint argument choices:
     background: #848484;
     z-index: 10;
     border-radius: 6px 6px 0 0; }
-  /* line 56, scss/components/_clock.scss */
+  /* line 57, scss/components/_clock.scss */
   .clock .min,
   .clock .mn {
     width: 110px;
     height: 110px; }
-  /* line 62, scss/components/_clock.scss */
+  /* line 63, scss/components/_clock.scss */
   .clock .mn::before {
     content: '';
     position: absolute;
@@ -730,12 +733,12 @@ $breakpoint argument choices:
     background: #d6d6d6;
     z-index: 11;
     border-radius: 6px 6px 0 0; }
-  /* line 72, scss/components/_clock.scss */
+  /* line 73, scss/components/_clock.scss */
   .clock .sec,
   .clock .sc {
     width: 110px;
     height: 110px; }
-  /* line 78, scss/components/_clock.scss */
+  /* line 79, scss/components/_clock.scss */
   .clock .sc::before {
     content: '';
     position: absolute;
@@ -744,7 +747,7 @@ $breakpoint argument choices:
     background: #c2682f;
     z-index: 12;
     border-radius: 6px 6px 0 0; }
-  /* line 88, scss/components/_clock.scss */
+  /* line 89, scss/components/_clock.scss */
   .clock #hr,
   .clock #mn,
   .clock #sc {
@@ -764,7 +767,8 @@ $breakpoint argument choices:
   z-index: 999999;
   height: 80px;
   line-height: 60px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  box-shadow: 0 20px 40px -10px #818181; }
   @media (max-width: 50em) {
     /* line 1, scss/components/_navbar.scss */
     .navbar {
@@ -806,7 +810,6 @@ $breakpoint argument choices:
     float: right;
     list-style: none;
     height: inherit;
-    padding: 0 50px;
     display: flex;
     align-items: center; }
     @media (max-width: 56.25em) {
@@ -841,7 +844,7 @@ $breakpoint argument choices:
         font-size: calc(13px + 1vw);
         display: block;
         text-align: center;
-        margin: 0 30px;
+        margin: 0 20px;
         position: relative; }
         /* line 101, scss/components/_navbar.scss */
         .navbar ul li a:after {
@@ -996,33 +999,36 @@ $breakpoint argument choices:
 
 /* line 2, scss/components/_cards.scss */
 .products__container .products {
-  padding: 4rem 0; }
+  padding: 70px 60px; }
   /* line 5, scss/components/_cards.scss */
   .products__container .products__title {
-    width: 90vw;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px;
+    grid-template-rows: 170px;
     align-items: center;
     align-content: center;
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 30px; }
-    /* line 16, scss/components/_cards.scss */
+    @media (max-width: 56.25em) {
+      /* line 5, scss/components/_cards.scss */
+      .products__container .products__title {
+        margin-bottom: 0px; } }
+    /* line 23, scss/components/_cards.scss */
     .products__container .products__title .subtitle {
       justify-self: center;
       font-size: 2.5rem;
       text-transform: capitalize;
       letter-spacing: 0.1rem;
       color: #c2682f; }
-    /* line 24, scss/components/_cards.scss */
+    /* line 31, scss/components/_cards.scss */
     .products__container .products__title .icon {
       justify-self: end; }
-      /* line 27, scss/components/_cards.scss */
+      /* line 34, scss/components/_cards.scss */
       .products__container .products__title .icon__btn {
         position: relative;
         cursor: pointer; }
-        /* line 31, scss/components/_cards.scss */
+        /* line 38, scss/components/_cards.scss */
         .products__container .products__title .icon__btn .cart__items {
           position: absolute;
           top: -8px;
@@ -1031,9 +1037,8 @@ $breakpoint argument choices:
           padding: 0 5px;
           border-radius: 30%;
           color: #fff; }
-  /* line 44, scss/components/_cards.scss */
+  /* line 51, scss/components/_cards.scss */
   .products__container .products__center {
-    width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
     display: grid;
@@ -1041,7 +1046,7 @@ $breakpoint argument choices:
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem; }
 
-/* line 55, scss/components/_cards.scss */
+/* line 62, scss/components/_cards.scss */
 .products__container .cart__overlay {
   position: fixed;
   top: 0;
@@ -1052,7 +1057,7 @@ $breakpoint argument choices:
   background: rgba(240, 157, 81, 0.5);
   z-index: 9999999;
   visibility: hidden; }
-  /* line 66, scss/components/_cards.scss */
+  /* line 73, scss/components/_cards.scss */
   .products__container .cart__overlay .cart {
     position: fixed;
     top: 80px;
@@ -1066,31 +1071,31 @@ $breakpoint argument choices:
     transition: all 0.3s linear;
     transform: translateX(100%); }
     @media (min-width: 46.25em) {
-      /* line 66, scss/components/_cards.scss */
+      /* line 73, scss/components/_cards.scss */
       .products__container .cart__overlay .cart {
         width: 30vw;
         min-width: 450px; } }
-    /* line 85, scss/components/_cards.scss */
+    /* line 92, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__close {
       font-size: 2rem;
       cursor: pointer;
       color: #c2682f; }
-    /* line 91, scss/components/_cards.scss */
+    /* line 98, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__h2 {
       text-transform: capitalize;
       text-align: center;
       letter-spacing: 0.1rem;
       margin-bottom: 2rem; }
-    /* line 98, scss/components/_cards.scss */
+    /* line 105, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__footer {
       margin-top: 2rem;
       letter-spacing: 0.1rem;
       text-align: center; }
-      /* line 103, scss/components/_cards.scss */
+      /* line 110, scss/components/_cards.scss */
       .products__container .cart__overlay .cart__footer .cart__h3 {
         text-transform: capitalize;
         margin-bottom: 1rem; }
-      /* line 108, scss/components/_cards.scss */
+      /* line 115, scss/components/_cards.scss */
       .products__container .cart__overlay .cart__footer .banner__btn {
         padding: 1rem 3rem;
         text-transform: uppercase;
@@ -1103,25 +1108,25 @@ $breakpoint argument choices:
         cursor: pointer;
         font-family: 'Akronim', sans-serif;
         border-radius: 20px; }
-        /* line 122, scss/components/_cards.scss */
+        /* line 129, scss/components/_cards.scss */
         .products__container .cart__overlay .cart__footer .banner__btn:hover {
           background: transparent;
           color: #f25715; }
-  /* line 130, scss/components/_cards.scss */
+  /* line 137, scss/components/_cards.scss */
   .products__container .cart__overlay .showCart {
     transform: translateX(0); }
 
-/* line 135, scss/components/_cards.scss */
+/* line 142, scss/components/_cards.scss */
 .products__container .transparentBcg {
   visibility: visible; }
 
-/* line 140, scss/components/_cards.scss */
+/* line 147, scss/components/_cards.scss */
 .img-container {
   position: relative;
   overflow: hidden;
   box-shadow: 0 20px 40px -10px #818181; }
 
-/* line 146, scss/components/_cards.scss */
+/* line 153, scss/components/_cards.scss */
 .bag-btn {
   position: absolute;
   top: 70%;
@@ -1136,30 +1141,30 @@ $breakpoint argument choices:
   transform: translateX(101%);
   cursor: pointer; }
 
-/* line 161, scss/components/_cards.scss */
+/* line 168, scss/components/_cards.scss */
 .bag-btn:hover {
   color: #fff; }
 
-/* line 165, scss/components/_cards.scss */
+/* line 172, scss/components/_cards.scss */
 .fa-shopping-cart {
   margin-right: 0.5rem; }
 
-/* line 169, scss/components/_cards.scss */
+/* line 176, scss/components/_cards.scss */
 .img-container:hover .bag-btn {
   transform: translateX(0); }
 
-/* line 173, scss/components/_cards.scss */
+/* line 180, scss/components/_cards.scss */
 .product-img {
   display: block;
   width: 100%;
   min-height: 12rem;
   transition: all 0.3s linear; }
 
-/* line 180, scss/components/_cards.scss */
+/* line 187, scss/components/_cards.scss */
 .img-container:hover .product-img {
   opacity: 0.5; }
 
-/* line 184, scss/components/_cards.scss */
+/* line 191, scss/components/_cards.scss */
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -1167,14 +1172,14 @@ $breakpoint argument choices:
   letter-spacing: 0.1rem;
   text-align: center; }
 
-/* line 192, scss/components/_cards.scss */
+/* line 199, scss/components/_cards.scss */
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: 0.1rem;
   color: #c2682f;
   text-align: center; }
 
-/* line 214, scss/components/_cards.scss */
+/* line 221, scss/components/_cards.scss */
 .cart-item {
   display: grid;
   align-items: center;
@@ -1182,37 +1187,37 @@ $breakpoint argument choices:
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0; }
 
-/* line 222, scss/components/_cards.scss */
+/* line 229, scss/components/_cards.scss */
 .cart-item img {
   width: 75px;
   height: 75px; }
 
-/* line 227, scss/components/_cards.scss */
+/* line 234, scss/components/_cards.scss */
 .cart-item h4 {
   font-size: 0.85rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem; }
 
-/* line 233, scss/components/_cards.scss */
+/* line 240, scss/components/_cards.scss */
 .cart-item h5 {
   margin: 0.5rem 0;
   letter-spacing: 0.1rem; }
 
-/* line 238, scss/components/_cards.scss */
+/* line 245, scss/components/_cards.scss */
 .item-amount {
   text-align: center;
   font-size: 25px; }
 
-/* line 244, scss/components/_cards.scss */
+/* line 251, scss/components/_cards.scss */
 .remove-item {
   color: grey;
   cursor: pointer; }
 
-/* line 249, scss/components/_cards.scss */
+/* line 256, scss/components/_cards.scss */
 .remove-item:hover {
   color: #f25715; }
 
-/* line 253, scss/components/_cards.scss */
+/* line 260, scss/components/_cards.scss */
 .fa-chevron-up,
 .fa-chevron-down {
   color: #f25715;
