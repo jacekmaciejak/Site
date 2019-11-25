@@ -365,7 +365,7 @@ $breakpoint argument choices:
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
+  z-index: 9999999;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s;
@@ -407,26 +407,35 @@ $breakpoint argument choices:
       .popup__footer .popup__content {
         display: block;
         text-align: center; } }
-    /* line 55, scss/components/_popup.scss */
+    @media (max-width: 75em) {
+      /* line 32, scss/components/_popup.scss */
+      .popup__footer .popup__content {
+        width: 90%;
+        height: 90vh; } }
+    /* line 61, scss/components/_popup.scss */
     .popup__footer .popup__content .popup__left {
       width: 33.333333%;
       display: table-cell; }
-      /* line 59, scss/components/_popup.scss */
+      /* line 65, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__left .popup__img {
         display: block;
         width: 100%; }
       @media (max-width: 46.25em) {
-        /* line 55, scss/components/_popup.scss */
+        /* line 61, scss/components/_popup.scss */
         .popup__footer .popup__content .popup__left {
           display: flex;
           width: 100%; } }
-    /* line 72, scss/components/_popup.scss */
+    /* line 78, scss/components/_popup.scss */
     .popup__footer .popup__content .popup__right {
       width: 66.6666667%;
       display: table-cell;
       vertical-align: middle;
-      padding: 3rem 5rem; }
-      /* line 80, scss/components/_popup.scss */
+      padding: 3rem 4rem; }
+      @media (max-width: 46.25em) {
+        /* line 78, scss/components/_popup.scss */
+        .popup__footer .popup__content .popup__right {
+          padding: 3rem 2rem; } }
+      /* line 90, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .popup__close:link, .popup__footer .popup__content .popup__right .popup__close:visited {
         color: #55c57a;
         position: absolute;
@@ -438,12 +447,12 @@ $breakpoint argument choices:
         -webkit-transition: all .2s;
         transition: all .2s;
         line-height: 1; }
-      /* line 94, scss/components/_popup.scss */
+      /* line 104, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .popup__close:hover {
         color: #c2682f; }
-      /* line 99, scss/components/_popup.scss */
+      /* line 109, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .heading__secondary {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         font-weight: 700;
         display: inline-block;
@@ -454,28 +463,26 @@ $breakpoint argument choices:
         transition: all .2s;
         margin-bottom: 4rem; }
         @media (max-width: 56.25em) {
-          /* line 99, scss/components/_popup.scss */
+          /* line 109, scss/components/_popup.scss */
           .popup__footer .popup__content .popup__right .heading__secondary {
-            font-size: 3rem;
-            margin-top: 5rem;
+            margin-top: 3rem;
             margin-bottom: 3rem; } }
-        @media (max-width: 37.5em) {
-          /* line 99, scss/components/_popup.scss */
+        @media (max-width: 46.25em) {
+          /* line 109, scss/components/_popup.scss */
           .popup__footer .popup__content .popup__right .heading__secondary {
-            font-size: 2.5rem; } }
-        /* line 122, scss/components/_popup.scss */
+            margin-top: 1rem;
+            margin-bottom: 1rem; } }
+        /* line 133, scss/components/_popup.scss */
         .popup__footer .popup__content .popup__right .heading__secondary:hover {
           transform: skewY(2deg) skewX(15deg);
           text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-      /* line 128, scss/components/_popup.scss */
+      /* line 139, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .heading__tertiary {
-        font-size: 1.6rem;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 1.5rem; }
-      /* line 135, scss/components/_popup.scss */
+      /* line 146, scss/components/_popup.scss */
       .popup__footer .popup__content .popup__right .popup__text {
-        font-size: 1.4rem;
         margin-bottom: 4rem;
         -webkit-column-count: 2;
         column-count: 2;
