@@ -1250,10 +1250,10 @@ $breakpoint argument choices:
 
 /* line 42, scss/main.scss */
 body {
-  font-family: 'Akronim', sans-serif;
+  font-family: 'Akronim', cursive;
   height: 100%; }
 
-/* line 47, scss/main.scss */
+/* line 49, scss/main.scss */
 hr {
   width: 60vw;
   margin: 0 auto;
