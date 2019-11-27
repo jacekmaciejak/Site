@@ -228,29 +228,37 @@ $breakpoint argument choices:
 /* line 1, scss/components/_slider.scss */
 .swiper-container {
   height: 100vh;
-  transition: opacity .6s ease;
+  transition: opacity 0.6s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   box-shadow: 0 20px 40px -10px #818181; }
-  /* line 9, scss/components/_slider.scss */
+  /* line 10, scss/components/_slider.scss */
+  .swiper-container .swiper-title {
+    color: #000;
+    font-size: 3rem;
+    height: 300px;
+    color: #c2682f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  /* line 23, scss/components/_slider.scss */
   .swiper-container.swiper-wrapper {
     width: 100%; }
-  /* line 13, scss/components/_slider.scss */
-  .swiper-container.swiper-container-coverflow {
-    padding-top: 10%; }
-  /* line 17, scss/components/_slider.scss */
+  /* line 31, scss/components/_slider.scss */
   .swiper-container.loading {
     opacity: 0;
     visibility: hidden; }
-  /* line 24, scss/components/_slider.scss */
+  /* line 37, scss/components/_slider.scss */
   .swiper-container:hover .swiper-button-prev,
   .swiper-container:hover .swiper-button-next {
     transform: translateX(0);
     opacity: 1;
     visibility: visible; }
 
-/* line 33, scss/components/_slider.scss */
+/* line 46, scss/components/_slider.scss */
 .swiper-slide {
   background-position: bottom;
   background-size: cover;
@@ -259,7 +267,7 @@ $breakpoint argument choices:
   height: inherit;
   position: relative;
   box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1); }
-  /* line 43, scss/components/_slider.scss */
+  /* line 55, scss/components/_slider.scss */
   .swiper-slide::after {
     content: "";
     background-image: inherit;
@@ -270,8 +278,8 @@ $breakpoint argument choices:
     transform: scaleY(-1);
     background-position: bottom;
     background-size: cover;
-    opacity: .4; }
-  /* line 56, scss/components/_slider.scss */
+    opacity: 0.4; }
+  /* line 68, scss/components/_slider.scss */
   .swiper-slide::before {
     content: "";
     width: inherit;
@@ -280,10 +288,10 @@ $breakpoint argument choices:
     bottom: -42%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), white);
     z-index: 1; }
-  /* line 66, scss/components/_slider.scss */
+  /* line 78, scss/components/_slider.scss */
   .swiper-slide .entity-img {
     display: none; }
-  /* line 70, scss/components/_slider.scss */
+  /* line 82, scss/components/_slider.scss */
   .swiper-slide .box {
     position: absolute;
     top: 40%;
@@ -291,44 +299,44 @@ $breakpoint argument choices:
     width: 70%;
     padding-left: 5%;
     color: #fff; }
-    /* line 78, scss/components/_slider.scss */
+    /* line 90, scss/components/_slider.scss */
     .swiper-slide .box .title {
       font-size: calc(13px + 1.3vw);
       font-weight: bold;
       margin-bottom: 30px; }
-    /* line 84, scss/components/_slider.scss */
+    /* line 96, scss/components/_slider.scss */
     .swiper-slide .box .caption {
       display: block;
       font-size: calc(10px + 1vw);
       line-height: 1.4; }
 
-/* line 92, scss/components/_slider.scss */
+/* line 104, scss/components/_slider.scss */
 [class^="swiper-button-"] {
   width: 44px;
   opacity: 0;
   visibility: hidden; }
 
-/* line 99, scss/components/_slider.scss */
+/* line 111, scss/components/_slider.scss */
 .swiper-button-prev {
   transform: translateX(50px);
-  top: 40%; }
+  top: 50%; }
 
-/* line 104, scss/components/_slider.scss */
+/* line 116, scss/components/_slider.scss */
 .swiper-button-next {
   transform: translateX(-50px);
-  top: 40%; }
+  top: 50%; }
 
-/* line 111, scss/components/_slider.scss */
+/* line 123, scss/components/_slider.scss */
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 9px;
   position: relative;
   width: 12px;
   height: 12px;
   background-color: #fff;
-  opacity: .4; }
-  /* line 120, scss/components/_slider.scss */
+  opacity: 0.4; }
+  /* line 132, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -337,25 +345,20 @@ $breakpoint argument choices:
     transform: translate(-50%, -50%);
     border: 0px solid #fff;
     border-radius: 50%; }
-  /* line 133, scss/components/_slider.scss */
+  /* line 145, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     opacity: 1; }
-  /* line 139, scss/components/_slider.scss */
+  /* line 151, scss/components/_slider.scss */
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     border-width: 1px; }
 
 @media (max-width: 1180px) {
-  /* line 151, scss/components/_slider.scss */
+  /* line 163, scss/components/_slider.scss */
   .swiper-slide .box .title {
     font-size: 25px; }
-  /* line 155, scss/components/_slider.scss */
+  /* line 167, scss/components/_slider.scss */
   .swiper-slide .box .caption {
     font-size: 12px; } }
-
-@media (max-width: 1023px) {
-  /* line 163, scss/components/_slider.scss */
-  .swiper-container {
-    height: 75vh; } }
 
 /* line 2, scss/components/_popup.scss */
 .popup__footer {
@@ -505,7 +508,7 @@ $breakpoint argument choices:
   /* line 9, scss/components/_carousel.scss */
   .carousel__container .carousel__title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #c2682f;
     margin-top: 50px; }
   /* line 16, scss/components/_carousel.scss */
@@ -551,7 +554,7 @@ $breakpoint argument choices:
   width: 100%; }
   /* line 5, scss/components/_content.scss */
   .content__main {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #c2682f;
     height: 200px;
     display: flex;
@@ -1025,7 +1028,7 @@ $breakpoint argument choices:
     /* line 23, scss/components/_cards.scss */
     .products__container .products__title .subtitle {
       justify-self: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       text-transform: capitalize;
       letter-spacing: 0.1rem;
       color: #c2682f; }
