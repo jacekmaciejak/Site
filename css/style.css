@@ -1025,21 +1025,21 @@ $breakpoint argument choices:
       /* line 5, scss/components/_cards.scss */
       .products__container .products__title {
         margin-bottom: 0px; } }
-    /* line 23, scss/components/_cards.scss */
+    /* line 21, scss/components/_cards.scss */
     .products__container .products__title .subtitle {
       justify-self: center;
       font-size: 3rem;
       text-transform: capitalize;
       letter-spacing: 0.1rem;
       color: #c2682f; }
-    /* line 31, scss/components/_cards.scss */
+    /* line 29, scss/components/_cards.scss */
     .products__container .products__title .icon {
       justify-self: end; }
-      /* line 34, scss/components/_cards.scss */
+      /* line 32, scss/components/_cards.scss */
       .products__container .products__title .icon__btn {
         position: relative;
         cursor: pointer; }
-        /* line 38, scss/components/_cards.scss */
+        /* line 36, scss/components/_cards.scss */
         .products__container .products__title .icon__btn .cart__items {
           position: absolute;
           top: -8px;
@@ -1048,7 +1048,7 @@ $breakpoint argument choices:
           padding: 0 5px;
           border-radius: 30%;
           color: #fff; }
-  /* line 51, scss/components/_cards.scss */
+  /* line 49, scss/components/_cards.scss */
   .products__container .products__center {
     margin: 0 auto;
     max-width: 1170px;
@@ -1057,7 +1057,7 @@ $breakpoint argument choices:
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem; }
 
-/* line 62, scss/components/_cards.scss */
+/* line 60, scss/components/_cards.scss */
 .products__container .cart__overlay {
   position: fixed;
   top: 0;
@@ -1068,7 +1068,7 @@ $breakpoint argument choices:
   background: rgba(240, 157, 81, 0.5);
   z-index: 9999999;
   visibility: hidden; }
-  /* line 73, scss/components/_cards.scss */
+  /* line 71, scss/components/_cards.scss */
   .products__container .cart__overlay .cart {
     position: fixed;
     top: 80px;
@@ -1082,31 +1082,31 @@ $breakpoint argument choices:
     transition: all 0.3s linear;
     transform: translateX(100%); }
     @media (min-width: 46.25em) {
-      /* line 73, scss/components/_cards.scss */
+      /* line 71, scss/components/_cards.scss */
       .products__container .cart__overlay .cart {
         width: 30vw;
         min-width: 450px; } }
-    /* line 92, scss/components/_cards.scss */
+    /* line 90, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__close {
       font-size: 2rem;
       cursor: pointer;
       color: #c2682f; }
-    /* line 98, scss/components/_cards.scss */
+    /* line 96, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__h2 {
       text-transform: capitalize;
       text-align: center;
       letter-spacing: 0.1rem;
       margin-bottom: 2rem; }
-    /* line 105, scss/components/_cards.scss */
+    /* line 103, scss/components/_cards.scss */
     .products__container .cart__overlay .cart__footer {
       margin-top: 2rem;
       letter-spacing: 0.1rem;
       text-align: center; }
-      /* line 110, scss/components/_cards.scss */
+      /* line 108, scss/components/_cards.scss */
       .products__container .cart__overlay .cart__footer .cart__h3 {
         text-transform: capitalize;
         margin-bottom: 1rem; }
-      /* line 115, scss/components/_cards.scss */
+      /* line 113, scss/components/_cards.scss */
       .products__container .cart__overlay .cart__footer .banner__btn {
         padding: 1rem 3rem;
         text-transform: uppercase;
@@ -1119,25 +1119,25 @@ $breakpoint argument choices:
         cursor: pointer;
         font-family: 'Akronim', sans-serif;
         border-radius: 20px; }
-        /* line 129, scss/components/_cards.scss */
+        /* line 127, scss/components/_cards.scss */
         .products__container .cart__overlay .cart__footer .banner__btn:hover {
           background: transparent;
           color: #f25715; }
-  /* line 137, scss/components/_cards.scss */
+  /* line 135, scss/components/_cards.scss */
   .products__container .cart__overlay .showCart {
     transform: translateX(0); }
 
-/* line 142, scss/components/_cards.scss */
+/* line 140, scss/components/_cards.scss */
 .products__container .transparentBcg {
   visibility: visible; }
 
-/* line 147, scss/components/_cards.scss */
+/* line 145, scss/components/_cards.scss */
 .img-container {
   position: relative;
   overflow: hidden;
   box-shadow: 0 20px 40px -10px #818181; }
 
-/* line 153, scss/components/_cards.scss */
+/* line 151, scss/components/_cards.scss */
 .bag-btn {
   position: absolute;
   top: 70%;
@@ -1152,30 +1152,30 @@ $breakpoint argument choices:
   transform: translateX(101%);
   cursor: pointer; }
 
-/* line 168, scss/components/_cards.scss */
+/* line 166, scss/components/_cards.scss */
 .bag-btn:hover {
   color: #fff; }
 
-/* line 172, scss/components/_cards.scss */
+/* line 170, scss/components/_cards.scss */
 .fa-shopping-cart {
   margin-right: 0.5rem; }
 
-/* line 176, scss/components/_cards.scss */
+/* line 174, scss/components/_cards.scss */
 .img-container:hover .bag-btn {
   transform: translateX(0); }
 
-/* line 180, scss/components/_cards.scss */
+/* line 178, scss/components/_cards.scss */
 .product-img {
   display: block;
   width: 100%;
   min-height: 12rem;
   transition: all 0.3s linear; }
 
-/* line 187, scss/components/_cards.scss */
+/* line 185, scss/components/_cards.scss */
 .img-container:hover .product-img {
   opacity: 0.5; }
 
-/* line 191, scss/components/_cards.scss */
+/* line 189, scss/components/_cards.scss */
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -1183,14 +1183,14 @@ $breakpoint argument choices:
   letter-spacing: 0.1rem;
   text-align: center; }
 
-/* line 199, scss/components/_cards.scss */
+/* line 197, scss/components/_cards.scss */
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: 0.1rem;
   color: #c2682f;
   text-align: center; }
 
-/* line 221, scss/components/_cards.scss */
+/* line 219, scss/components/_cards.scss */
 .cart-item {
   display: grid;
   align-items: center;
@@ -1198,37 +1198,39 @@ $breakpoint argument choices:
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0; }
 
-/* line 229, scss/components/_cards.scss */
+/* line 227, scss/components/_cards.scss */
 .cart-item img {
   width: 75px;
   height: 75px; }
 
-/* line 234, scss/components/_cards.scss */
+/* line 232, scss/components/_cards.scss */
 .cart-item h4 {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem; }
 
-/* line 240, scss/components/_cards.scss */
+/* line 238, scss/components/_cards.scss */
 .cart-item h5 {
+  font-size: 1.1rem;
   margin: 0.5rem 0;
   letter-spacing: 0.1rem; }
 
-/* line 245, scss/components/_cards.scss */
+/* line 244, scss/components/_cards.scss */
 .item-amount {
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  font-weight: bold; }
 
-/* line 251, scss/components/_cards.scss */
+/* line 250, scss/components/_cards.scss */
 .remove-item {
   color: grey;
   cursor: pointer; }
 
-/* line 256, scss/components/_cards.scss */
+/* line 255, scss/components/_cards.scss */
 .remove-item:hover {
   color: #f25715; }
 
-/* line 260, scss/components/_cards.scss */
+/* line 259, scss/components/_cards.scss */
 .fa-chevron-up,
 .fa-chevron-down {
   color: #f25715;
