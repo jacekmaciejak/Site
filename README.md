@@ -1,6 +1,6 @@
 # Business Site
  
-###[Live Site](https://jacekmaciejak.github.io/Site/)
+### [Live Site](https://jacekmaciejak.github.io/Site/)
 
 Technology:
 sass
