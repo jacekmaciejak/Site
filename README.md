@@ -2,6 +2,8 @@
  
 ### [Live Site](https://jacekmaciejak.github.io/Site/)
 
+![Site](https://ibb.co/nnRHp3j)
+
 ## Technology:
 sass, <br>
 Swiperjs - slider,<br>
