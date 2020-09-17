@@ -1,6 +1,6 @@
 # Business Site
  
-### [Live Site](https://jacekmaciejak.github.io/Business-Site/)
+## [Live Site](https://jacekmaciejak.github.io/Business-Site/)
 
 ![Site](https://i.ibb.co/ssbT8SC/img2.png)
 
